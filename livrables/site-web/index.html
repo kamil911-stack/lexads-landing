@@ -828,13 +828,14 @@
     .method-row.reverse > :first-child { order: 0; }
   }
   @media (max-width: 640px) {
-    .method-visual { padding: 14px; }
+    .method-visual { padding: 14px; aspect-ratio: unset; min-height: unset; }
     .mock { font-size: 10px; gap: 8px; }
     .mock-bar { padding: 8px 10px; gap: 6px; overflow: hidden; }
     .mock-bar > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex-shrink: 1; }
     .mock-bar > .mock-dot { flex-shrink: 0; min-width: 8px; overflow: visible; }
     .mock-bar > span[style*="margin-left"] { flex-shrink: 0; overflow: visible; }
     .mock-bar > div { min-width: 0; flex: 1; }
+    .mock-chart { flex: none; height: 100px; }
   }
 
   /* ============ ROI BLOCK ============ */
