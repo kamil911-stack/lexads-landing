@@ -7,6 +7,25 @@
 
 ---
 
+## 2026-05-23
+
+### Mise en place routine prospection LexAds
+- Routine automatique créée (claude.ai remote agent, ID : trig_012Yar1PELUh83u5YxyfZt69)
+- Fréquence : tous les jours à 8h00 Paris
+- Cible : avocats droit civil avec fiche Google My Business, Essonne (91) + Val-de-Marne (94)
+- Quota : 50 prospects/jour (25 par département), ville par ville
+- Données collectées : prénom/nom avocat, téléphone, email direct, ligne directe, site web, position Google, note GMB, présence Google Ads
+- Résultats stockés dans base Notion "Prospects LexAds" (créée à la première exécution le 24/05)
+
+### Lancement LexAds — Étude de marché + site vitrine
+- Nom de l'agence choisi : LexAds
+- Étude de marché complète rédigée (marché SEA France, portrait client avocat, concurrence, positionnement, offres, stratégie d'acquisition)
+- Site vitrine créé et déployé sur Netlify (lexads.fr)
+- Structure livrables organisée (prospection, offres, campagnes, clients, etc.)
+- Prochaines étapes : certification Google Skillshop + lancement prospection
+
+---
+
 ## 2026-05-21
 
 ### Installation initiale du Jarvis
