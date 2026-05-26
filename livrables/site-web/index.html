@@ -1733,25 +1733,27 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
         <div class="audit-form-wrap reveal reveal-d2">
           <div class="form-title">Réserver votre audit</div>
           <div class="form-sub">Réponse sous 24h · Sans engagement</div>
-          <form id="audit-form" novalidate>
+          <form id="audit-form" name="audit-perflux" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="audit-perflux" />
+            <p style="display:none"><input name="bot-field" /></p>
             <div class="form-row-2">
               <div class="fgroup">
                 <label>Nom complet</label>
-                <input type="text" placeholder="Me Jean Dupont" required />
+                <input type="text" name="nom" placeholder="Me Jean Dupont" required />
               </div>
               <div class="fgroup">
                 <label>Téléphone</label>
-                <input type="tel" placeholder="06 00 00 00 00" required />
+                <input type="tel" name="telephone" placeholder="06 00 00 00 00" required />
               </div>
             </div>
             <div class="fgroup">
               <label>Email professionnel</label>
-              <input type="email" placeholder="contact@cabinet-dupont.fr" required />
+              <input type="email" name="email" placeholder="contact@cabinet-dupont.fr" required />
             </div>
             <div class="form-row-2">
               <div class="fgroup">
                 <label>Spécialité principale</label>
-                <select required>
+                <select name="specialite" required>
                   <option value="">Choisir...</option>
                   <option>Droit du travail</option>
                   <option>Droit civil</option>
@@ -1761,7 +1763,7 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
               </div>
               <div class="fgroup">
                 <label>Zone géographique</label>
-                <input type="text" placeholder="Paris 11e, Lyon..." required />
+                <input type="text" name="zone" placeholder="Paris 11e, Lyon..." required />
               </div>
             </div>
             <button type="submit" class="btn btn-primary btn-form-submit">
@@ -1925,9 +1927,11 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
   /* ---- Formulaire audit ---- */
   const auditForm = document.getElementById('audit-form');
   if (auditForm) {
-    auditForm.addEventListener('submit', (e) => {
+    auditForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const wrap = auditForm.closest('.audit-form-wrap');
+      const data = new FormData(auditForm);
+      await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() });
       auditForm.style.opacity = '0';
       auditForm.style.transition = 'opacity .3s';
       setTimeout(() => {
