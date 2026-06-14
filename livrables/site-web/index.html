@@ -11,6 +11,8 @@
 <meta name="robots" content="index, follow" />
 <meta name="author" content="Perflux" />
 <link rel="canonical" href="https://perflux.fr/" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/favicon.svg" />
 
 <!-- Géolocalisation -->
 <meta name="geo.region" content="FR-IDF" />
@@ -1201,7 +1203,16 @@
       "description": "Agence Google Ads spécialisée pour les avocats en droit du travail, droit civil et droit pénal. Conformité RIN garantie, call tracking, reporting en dossiers qualifiés.",
       "url": "https://perflux.fr",
       "email": "contact@perflux.fr",
-      "areaServed": { "@type": "Country", "name": "France" },
+      "areaServed": [
+        { "@type": "Country", "name": "France" },
+        { "@type": "AdministrativeArea", "name": "Île-de-France" }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contact@perflux.fr",
+        "availableLanguage": "French"
+      },
       "serviceType": ["Gestion Google Ads pour avocats", "Référencement payant SEA", "Publicité en ligne cabinet avocat"],
       "priceRange": "€€€",
       "knowsAbout": ["Google Ads", "SEA", "Publicité avocats", "RIN barreau", "Call tracking", "Droit du travail", "Droit civil", "Droit pénal"]
@@ -1733,9 +1744,11 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
         <div class="audit-form-wrap reveal reveal-d2">
           <div class="form-title">Réserver votre audit</div>
           <div class="form-sub">Réponse sous 24h · Sans engagement</div>
-          <form id="audit-form" name="audit-perflux" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="audit-perflux" />
-            <p style="display:none"><input name="bot-field" /></p>
+          <form id="audit-form" name="audit-perflux" method="POST" action="https://formsubmit.co/kamil@perflux.fr">
+            <input type="hidden" name="_subject" value="Nouvelle demande d'audit Perflux" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" value="" style="display:none !important" autocomplete="off" />
             <div class="form-row-2">
               <div class="fgroup">
                 <label>Nom complet</label>
@@ -1930,8 +1943,24 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
     auditForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const wrap = auditForm.closest('.audit-form-wrap');
+      const submitBtn = auditForm.querySelector('[type="submit"]');
       const data = new FormData(auditForm);
-      await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() });
+      const formData = Object.fromEntries(data.entries());
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = '0.6';
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/kamil@perflux.fr', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+        if (!res.ok) throw new Error('server error');
+      } catch {
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+        submitBtn.innerHTML = 'Erreur — réessayer <span class="arrow">→</span>';
+        return;
+      }
       auditForm.style.opacity = '0';
       auditForm.style.transition = 'opacity .3s';
       setTimeout(() => {
