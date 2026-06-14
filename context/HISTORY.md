@@ -7,6 +7,44 @@
 
 ---
 
+## 2026-06-14
+
+### Configuration agents, skills, SMTP et n8n-as-code
+
+**Agents Perflux**
+- 3 agents créés dans .claude/agents/ : Hunter (prospection), Emma (emails), Marcus (pilotage commercial)
+- Skills intégrés directement dans les agents : BANT avocat, extraction email 3 passes, tiers prospecting, copywriting par étape (J0:150/J+3:80/J+7:120/J+14:100), personnalisation niveau 1-4, win/loss analysis, benchmarks performance
+
+**Skills marketplace**
+- Plugin Sales Skills installé : 100+ SKILL.md dans .agents/skills/ (outbound-prospecting, copywriting, email-sequence, ghost-recovery-sequences, etc.)
+- Règles clés extraites et intégrées directement dans Hunter, Emma et Marcus
+
+**Email et SMTP**
+- Angle fiche Google My Business ajouté aux emails J0 Emma
+- Lien Calendly intégré : https://calendly.com/kamil-perflux/30min
+- SMTP IONOS opérationnel : smtp.ionos.fr port 465 SSL, kamil@perflux.fr
+- MailKit installé (Send-MailMessage ne supporte pas port 465 implicit SSL)
+- Credentials en variables d'env dans settings.json (jamais en dur)
+- Test réussi : email reçu sur kamilkhebbache911@gmail.com
+
+**n8n-as-code**
+- Plugin n8n-as-code installé via marketplace Claude Code
+- AGENTS.md et .github/agents/n8n-architect.agent.md auto-générés
+- Permet de gérer les workflows n8n directement depuis Claude Code
+
+---
+
+## 2026-05-25
+
+### Création du CRM de prospection Perflux
+- CRM web app créée en HTML/CSS/JS (fichier : livrables/prospection/crm.html)
+- 5 colonnes kanban : Nouveaux / Contactés / Intéressés / Rendez-vous / Lost
+- Système de scoring sur 100 pts : Cabinet(10) + Dirigeant(25) + Téléphone(20) + Email(25) + Site web(10) + LinkedIn(10)
+- Prospects Notion importés et pré-chargés dans le CRM avec scoring calculé
+- Backup JSON créé : livrables/prospection/prospects-perflux.json
+
+---
+
 ## 2026-05-23
 
 ### Mise en place routine prospection Perflux

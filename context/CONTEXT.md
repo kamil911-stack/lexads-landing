@@ -60,7 +60,7 @@ Account manager chez Artur'in (alternance). Je gère un portefeuille de 300 comp
 
 ## Mes projets en cours
 
-- **Agence SEA — Perflux** : étude de marché complète rédigée, offre structurée (3 formules : 600/1 000/1 600€/mois), site vitrine créé et déployé sur Netlify (perflux.fr), structure de livrables en place. Routine de prospection automatique active depuis le 24/05 : tourne tous les jours à 8h, cible les avocats en droit civil avec fiche Google My Business dans l'Essonne (91) et le Val-de-Marne (94), 50 prospects/jour (25 par département), résultats stockés dans la base Notion "Prospects Perflux". Prochaine étape : certification Google Skillshop + lancement des prises de contact.
+- **Agence SEA — Perflux** : étude de marché complète, offre structurée (3 formules : 600/1 000/1 600€/mois), site vitrine déployé sur Netlify (perflux.fr). Système de prospection opérationnel : 3 agents Claude Code configurés (Hunter/prospection, Emma/emails, Marcus/pilotage), 100+ skills commerciaux intégrés dans .agents/skills/. SMTP IONOS opérationnel (kamil@perflux.fr, port 465 SSL, MailKit). Séquence email J0/J+3/J+7/J+14 avec angle fiche Google My Business et lien Calendly. n8n-as-code installé pour gérer les workflows n8n depuis Claude Code. Prochaine étape : configurer la base Notion "Prospects Perflux" puis lancer Hunter pour la première session de prospection réelle.
 - **Génération de revenus rapides** : trouver 2 000€ hors alternance en 2 mois via SEA ou autres leviers digitaux adaptés au profil
 
 ---
