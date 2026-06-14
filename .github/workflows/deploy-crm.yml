@@ -1,0 +1,23 @@
+name: Deploy CRM to Netlify
+
+on:
+  push:
+    paths:
+      - 'livrables/crm-site/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Netlify
+        run: |
+          npm install -g netlify-cli
+          netlify deploy \
+            --dir=livrables/crm-site \
+            --functions=livrables/crm-site/netlify/functions \
+            --site=b8b61ded-385c-4e37-8605-dfbe477c3200 \
+            --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

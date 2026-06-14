@@ -492,7 +492,7 @@ let editId = null, query = '', sortCol = 'createdAt', sortDir = 'desc', page = 0
 const PAGE_SIZE = 25;
 
 /* ── INIT ────────────────────────────────────────── */
-(function init() {
+(async function init() {
   const saved = JSON.parse(localStorage.getItem('pf_crm_v2') || 'null');
   if (saved && Array.isArray(saved) && saved.length) {
     data = saved.map(ensureFields);
@@ -527,6 +527,24 @@ const PAGE_SIZE = 25;
   }
   persist();
   render();
+
+  // Fetch Notion prospects via Netlify Function (Hunter → Notion → CRM)
+  try {
+    const resp = await fetch('/.netlify/functions/prospects?t=' + Date.now());
+    if (resp.ok) {
+      const remote = await resp.json();
+      if (Array.isArray(remote) && remote.length) {
+        let changed = false;
+        remote.forEach(rp => {
+          if (!data.find(p => p.id === rp.id)) {
+            data.push(ensureFields(rp));
+            changed = true;
+          }
+        });
+        if (changed) { persist(); render(); }
+      }
+    }
+  } catch(e) {}
 })();
 
 function migrateStage(s) {
