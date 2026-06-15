@@ -579,7 +579,17 @@ const SEED = [
           remote.forEach(rp => {
             const dup = data.find(p => p.id === rp.id || (rp.email && p.email === rp.email));
             if (!dup && !deletedIds.has(rp.id)) { data.push(ensureFields(rp)); }
-            else if (dup && rp.groupe) { dup.groupe = rp.groupe; }
+            else if (dup) {
+              if (rp.groupe) dup.groupe = rp.groupe;
+              ['j0','j3','j7','j14'].forEach(st => {
+                if (rp.seq?.[st]?.sent && !dup.seq?.[st]?.sent) {
+                  if (!dup.seq) dup.seq = emptySeq();
+                  dup.seq[st].sent = true;
+                  if (rp.seq[st].sentAt) dup.seq[st].sentAt = rp.seq[st].sentAt;
+                  if (rp.seq[st].objet)  dup.seq[st].objet  = rp.seq[st].objet;
+                }
+              });
+            }
           });
         }
         persist();
@@ -598,7 +608,18 @@ const SEED = [
         remote.forEach(rp => {
           const dup = data.find(p => p.id === rp.id || (rp.email && p.email === rp.email));
           if (!dup && !deletedIds.has(rp.id)) { data.push(ensureFields(rp)); changed = true; }
-          else if (dup && rp.groupe) { dup.groupe = rp.groupe; changed = true; }
+          else if (dup) {
+            let upd = false;
+            if (rp.groupe && dup.groupe !== rp.groupe) { dup.groupe = rp.groupe; upd = true; }
+            ['j0','j3','j7','j14'].forEach(st => {
+              if (rp.seq?.[st]?.opened && !dup.seq?.[st]?.opened) {
+                if (!dup.seq) dup.seq = emptySeq();
+                dup.seq[st].opened = true;
+                upd = true;
+              }
+            });
+            if (upd) changed = true;
+          }
         });
         if (changed) { persist(); render(); }
       }

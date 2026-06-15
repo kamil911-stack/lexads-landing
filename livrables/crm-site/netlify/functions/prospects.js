@@ -40,6 +40,7 @@ function prop(page, name, type) {
   if (type === 'phone')      return p.phone_number || '';
   if (type === 'url')        return p.url || '';
   if (type === 'number')     return p.number != null ? String(p.number) : '';
+  if (type === 'checkbox')   return p.checkbox === true;
   return '';
 }
 
@@ -65,11 +66,17 @@ function mapToCRM(page) {
     scoreHunter: String(score),
     tier: score >= 8 ? '1' : score >= 6 ? '2' : '3',
     gads: prop(page, 'Google Ads détectés', 'select') || 'Inconnu',
+    groupe: (prop(page, 'Groupe', 'select') || '').toLowerCase(),
     ctx: prop(page, 'Matière à personnalisation', 'text'),
     stage: 'nouveaux',
     dateRdv: '',
     notes: '',
-    seq: { j0: emptyStep(), j3: emptyStep(), j7: emptyStep(), j14: emptyStep() },
+    seq: {
+      j0:  { ...emptyStep(), opened: prop(page, 'J0 ouvert',  'checkbox') },
+      j3:  { ...emptyStep(), opened: prop(page, 'J3 ouvert',  'checkbox') },
+      j7:  { ...emptyStep(), opened: prop(page, 'J7 ouvert',  'checkbox') },
+      j14: { ...emptyStep(), opened: prop(page, 'J14 ouvert', 'checkbox') },
+    },
     activityLog: [],
     createdAt: page.created_time
   };
