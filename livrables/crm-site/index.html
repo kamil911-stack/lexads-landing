@@ -491,6 +491,12 @@ let data = [];
 let editId = null, query = '', sortCol = 'createdAt', sortDir = 'desc', page = 0;
 const PAGE_SIZE = 25;
 
+/* ── SEED DATA ───────────────────────────────────── */
+const SEED = [
+  {id:'seed_charnois',nom:'Alexandra Charnois',cabinet:'Cabinet Charnois',spec:'Droit civil',dept:'94',ville:'Vincennes',tel:'06 62 82 94 85',email:'acharnois@charnois-avocat.fr',site:'https://charnois-avocat.fr',linkedin:'',scoreHunter:'8',tier:'1',gads:'Non',ctx:'Note Google 5.0/5 — cabinet droit de la famille, site actif.',stage:'nouveaux',dateRdv:'',notes:'',seq:emptySeq(),activityLog:[],createdAt:'2026-05-25T00:00:00.000Z'},
+  {id:'seed_bacle',nom:'Emeline Baclé',cabinet:'Cabinet Baclé',spec:'Droit civil',dept:'94',ville:'Joinville-le-Pont',tel:'01 82 39 08 38',email:'cabinet@avocat-bacle.fr',site:'https://www.bacle-avocat.fr',linkedin:'',scoreHunter:'7',tier:'2',gads:'Non',ctx:'Droit immobilier, droit de la famille.',stage:'nouveaux',dateRdv:'',notes:'',seq:emptySeq(),activityLog:[],createdAt:'2026-05-25T00:00:00.000Z'},
+];
+
 /* ── INIT ────────────────────────────────────────── */
 (async function init() {
   const saved = JSON.parse(localStorage.getItem('pf_crm_v2') || 'null');
@@ -1189,11 +1195,6 @@ function fmtDate(iso) {
 
 document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
 
-/* ── SEED DATA ───────────────────────────────────── */
-const SEED = [
-  {id:'seed_charnois',nom:'Alexandra Charnois',cabinet:'Cabinet Charnois',spec:'Droit civil',dept:'94',ville:'Vincennes',tel:'06 62 82 94 85',email:'acharnois@charnois-avocat.fr',site:'https://charnois-avocat.fr',linkedin:'',scoreHunter:'8',tier:'1',gads:'Non',ctx:'Note Google 5.0/5 — cabinet droit de la famille, site actif.',stage:'nouveaux',dateRdv:'',notes:'',seq:emptySeq(),activityLog:[],createdAt:'2026-05-25T00:00:00.000Z'},
-  {id:'seed_bacle',nom:'Emeline Baclé',cabinet:'Cabinet Baclé',spec:'Droit civil',dept:'94',ville:'Joinville-le-Pont',tel:'01 82 39 08 38',email:'cabinet@avocat-bacle.fr',site:'https://www.bacle-avocat.fr',linkedin:'',scoreHunter:'7',tier:'2',gads:'Non',ctx:'Droit immobilier, droit de la famille.',stage:'nouveaux',dateRdv:'',notes:'',seq:emptySeq(),activityLog:[],createdAt:'2026-05-25T00:00:00.000Z'},
-];
 </script>
 </body>
 </html>
