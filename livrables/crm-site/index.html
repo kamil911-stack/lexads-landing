@@ -57,6 +57,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .sp-interesse{background:#ffedd5;color:#c2410c}
 .sp-rdv{background:#dcfce7;color:#166534}
 .sp-lost{background:#fee2e2;color:#991b1b}
+.grp-emma{background:#dbeafe;color:#1d4ed8}
+.grp-sami{background:#ede9fe;color:#6d28d9}
 .td-score{font-weight:700;text-align:center;width:50px}
 .td-acts{display:flex;gap:4px;opacity:0;transition:.1s}
 .ltable tr:hover .td-acts{opacity:1}
@@ -293,6 +295,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
     <option value="rdv">RDV</option>
     <option value="lost">Terminé/Lost</option>
   </select>
+  <select class="tbsel" id="filtGroupe" onchange="render()">
+    <option value="">Tous groupes</option>
+    <option value="emma">Groupe Emma</option>
+    <option value="sami">Groupe Sami</option>
+  </select>
   <button class="btn btnp" onclick="openModal()">+ Nouveau prospect</button>
   <div class="tbr">
     <button class="btn btns" onclick="exportData()">↓ Export</button>
@@ -315,6 +322,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
           <th>Téléphone</th>
           <th onclick="sortBy('stage')">Statut <span class="sort-icon" id="si-stage"></span></th>
           <th onclick="sortBy('_score')">Score <span class="sort-icon" id="si-_score"></span></th>
+          <th>Groupe</th>
           <th>Séquence</th>
           <th>Actions</th>
         </tr>
@@ -420,6 +428,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
         <div class="fg"><label>Tier</label>
           <select id="f-tier"><option value="">Auto</option><option value="1">Tier 1 (≥ 8)</option><option value="2">Tier 2 (6-7)</option><option value="3">Tier 3 (&lt; 6)</option></select>
         </div>
+        <div class="fg"><label>Groupe A/B</label>
+          <select id="f-groupe"><option value="">Non assigné</option><option value="emma">Emma</option><option value="sami">Sami</option></select>
+        </div>
         <div class="fg full"><label>Matière à personnalisation (contexte Hunter)</label>
           <textarea id="f-ctx" placeholder="Ex: Note GMB 4.8/5, posts LinkedIn actifs sur divorce contentieux, article publié mars 2024..."></textarea>
         </div>
@@ -486,8 +497,31 @@ const SCORE_CFG = [
   {k:'scoreHunter',  l:'Score ≥8', pts:0.5, fn:p=>parseFloat(p.scoreHunter||0)>=8},
 ];
 
+/* ── GROUPE MAP (source de vérité A/B) ───────────── */
+const GROUPE_MAP = {
+  'p_acharnois_charnois_avocat_fr':         'emma',
+  'p_cabinet_avocat_bacle_fr':              'sami',
+  'p_bonzoug_orange_fr':                    'emma',
+  'p_thibolot_gmail_com':                   'sami',
+  'p_avocatsimaogomes_gmail_com':           'emma',
+  'p_me_masson_avocat_gmail_com':           'sami',
+  'p_avocat_cdanielian_com':                'emma',
+  'p_contact_yanngre_com':                  'sami',
+  'p_contact_bellot_avocat_com':            'emma',
+  'p_chemla_avocat_bbox_fr':                'sami',
+  'p_norman_delain_avocat_com':             'emma',
+  'p_contact_cabinet_mbavocats_fr':         'sami',
+  'p_nerrant_stephane_gmail_com':           'emma',
+  'p_isabelle_paris_avocat_conseil_91_fr':  'sami',
+  'p_ldeleenheer_avocat_gmail_com':         'emma',
+  'p_contact_debrenne_dehay_avocats_fr':    'sami',
+  'p_aurelie_dussud_adavocat_fr':           'emma',
+  'p_alexandra_lesergent_wanadoo_fr':       'sami',
+};
+
 /* ── STATE ───────────────────────────────────────── */
 let data = [];
+let deletedIds = new Set(JSON.parse(localStorage.getItem('pf_crm_deleted') || '[]'));
 let editId = null, query = '', sortCol = 'createdAt', sortDir = 'desc', page = 0;
 const PAGE_SIZE = 25;
 
@@ -544,7 +578,8 @@ const SEED = [
         } else {
           remote.forEach(rp => {
             const dup = data.find(p => p.id === rp.id || (rp.email && p.email === rp.email));
-            if (!dup) { data.push(ensureFields(rp)); }
+            if (!dup && !deletedIds.has(rp.id)) { data.push(ensureFields(rp)); }
+            else if (dup && rp.groupe) { dup.groupe = rp.groupe; }
           });
         }
         persist();
@@ -562,7 +597,8 @@ const SEED = [
         let changed = false;
         remote.forEach(rp => {
           const dup = data.find(p => p.id === rp.id || (rp.email && p.email === rp.email));
-          if (!dup) { data.push(ensureFields(rp)); changed = true; }
+          if (!dup && !deletedIds.has(rp.id)) { data.push(ensureFields(rp)); changed = true; }
+          else if (dup && rp.groupe) { dup.groupe = rp.groupe; changed = true; }
         });
         if (changed) { persist(); render(); }
       }
@@ -575,7 +611,8 @@ function migrateStage(s) {
 }
 
 function ensureFields(p) {
-  return {activityLog:[], seq:emptySeq(), ...p};
+  const g = p.groupe || GROUPE_MAP[p.id] || '';
+  return {activityLog:[], seq:emptySeq(), ...p, groupe: g};
 }
 
 function emptySeq() {
@@ -585,6 +622,7 @@ function emptySeq() {
 }
 
 function persist() { localStorage.setItem('pf_crm_v2', JSON.stringify(data)); }
+function persistDeleted() { localStorage.setItem('pf_crm_deleted', JSON.stringify([...deletedIds])); }
 
 /* ── SCORING ─────────────────────────────────────── */
 function calcScore(p) {
@@ -600,14 +638,16 @@ function tierOf(p)    { const s=calcScore(p); return parseInt(p.tier)||( s>=8?1:
 /* ── FILTER ──────────────────────────────────────── */
 function filtered() {
   const q = query.toLowerCase();
-  const fSpec  = document.getElementById('filtSpec').value;
-  const fDept  = document.getElementById('filtDept').value;
-  const fStage = document.getElementById('filtStage').value;
+  const fSpec   = document.getElementById('filtSpec').value;
+  const fDept   = document.getElementById('filtDept').value;
+  const fStage  = document.getElementById('filtStage').value;
+  const fGroupe = document.getElementById('filtGroupe').value;
   return data.filter(p => {
     if (q && !(p.nom||'').toLowerCase().includes(q) && !(p.cabinet||'').toLowerCase().includes(q) && !(p.email||'').toLowerCase().includes(q)) return false;
-    if (fSpec  && !(p.spec||'').includes(fSpec))  return false;
-    if (fDept  && p.dept !== fDept)               return false;
-    if (fStage && p.stage !== fStage)             return false;
+    if (fSpec   && !(p.spec||'').includes(fSpec))   return false;
+    if (fDept   && p.dept !== fDept)                return false;
+    if (fStage  && p.stage !== fStage)              return false;
+    if (fGroupe && (p.groupe||'') !== fGroupe)      return false;
     return true;
   });
 }
@@ -689,6 +729,7 @@ function renderList() {
           <td>${esc(p.tel||'—')}</td>
           <td class="td-stage"><span class="stage-pill ${pillCls}">${STAGES[p.stage]?.l||p.stage}</span></td>
           <td class="td-score"><span class="sring ${sc}" style="display:inline-flex;width:26px;height:26px;font-size:10px">${s}</span></td>
+          <td>${p.groupe?`<span class="stage-pill grp-${esc(p.groupe)}">${p.groupe==='emma'?'Emma':'Sami'}</span>`:'—'}</td>
           <td><div class="sdots" style="flex-wrap:nowrap">${seqHtml}</div></td>
           <td><div class="td-acts">
             <button class="btnq next" onclick="openModal('${p.id}')">Éditer</button>
@@ -697,7 +738,7 @@ function renderList() {
           </div></td>
         </tr>`;
       }).join('')
-    : '<tr><td colspan="10" style="text-align:center;padding:32px;color:#c8c6c4">Aucun prospect</td></tr>';
+    : '<tr><td colspan="11" style="text-align:center;padding:32px;color:#c8c6c4">Aucun prospect</td></tr>';
 
   // Pagination
   const totalAll = filtered().length;
@@ -751,6 +792,7 @@ function cardHTML(p) {
   const next = STAGES[p.stage]?.next;
 
   let chips = `<span class="chip ct${t}">T${t}</span>`;
+  if (p.groupe) chips += `<span class="chip grp-${esc(p.groupe)}">${p.groupe==='emma'?'Emma':'Sami'}</span>`;
   if (p.tel)   chips += `<span class="chip cph">📞 ${esc(p.tel)}</span>`;
   if (p.email) chips += `<span class="chip cem"><a href="mailto:${esc(p.email)}">✉ Email</a></span>`;
   if (p.site)  chips += `<span class="chip cwb"><a href="${esc(p.site)}" target="_blank">🌐 Site</a></span>`;
@@ -896,6 +938,47 @@ function renderStats() {
       ${[['Tier 1',t1,'#2e844a'],['Tier 2',t2,'#f59e0b'],['Tier 3',t3,'#c23934']].map(([l,n,c])=>`
         <div class="bar-row"><span class="bar-lbl">${l}</span><div class="bar-track"><div class="bar-fill" style="width:${total?n/total*100:0}%;background:${c}"></div></div><span class="bar-val">${n}</span></div>`).join('')}
     </div>
+    ${(()=>{
+      const ge = data.filter(p=>p.groupe==='emma');
+      const gs = data.filter(p=>p.groupe==='sami');
+      if (!ge.length && !gs.length) return '';
+      const stat = g => {
+        const sent = g.filter(p=>SEQ_STEPS.some(s=>(p.seq||{})[s.k]?.sent)).length;
+        const rep  = g.filter(p=>SEQ_STEPS.some(s=>(p.seq||{})[s.k]?.replied)).length;
+        const rdv  = g.filter(p=>p.stage==='rdv').length;
+        const tRep = sent ? Math.round(rep/sent*100) : 0;
+        return {n:g.length, sent, rep, rdv, tRep};
+      };
+      const se = stat(ge), ss = stat(gs);
+      const winner = se.tRep > ss.tRep ? 'Emma' : ss.tRep > se.tRep ? 'Sami' : 'Trop tôt';
+      const minData = se.sent >= 20 && ss.sent >= 20;
+      return `<div class="sc full">
+        <h3>Test A/B — Emma vs Sami</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px">
+          <div>
+            <div style="font-size:12px;font-weight:700;color:#1d4ed8;margin-bottom:8px">Groupe Emma — séquence standard</div>
+            <div class="kpi-row">
+              <div class="kpi"><div class="kv">${se.n}</div><div class="kl">Prospects</div></div>
+              <div class="kpi"><div class="kv">${se.sent}</div><div class="kl">Emails envoyés</div></div>
+              <div class="kpi ${se.tRep>=8?'ok':se.tRep<3&&se.sent>5?'alarm':''}"><div class="kv">${se.tRep}%</div><div class="kl">Taux réponse</div></div>
+              <div class="kpi ${se.rdv>0?'ok':''}"><div class="kv">${se.rdv}</div><div class="kl">RDV</div></div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size:12px;font-weight:700;color:#6d28d9;margin-bottom:8px">Groupe Sami — audit + fondateur</div>
+            <div class="kpi-row">
+              <div class="kpi"><div class="kv">${ss.n}</div><div class="kl">Prospects</div></div>
+              <div class="kpi"><div class="kv">${ss.sent}</div><div class="kl">Emails envoyés</div></div>
+              <div class="kpi ${ss.tRep>=8?'ok':ss.tRep<3&&ss.sent>5?'alarm':''}"><div class="kv">${ss.tRep}%</div><div class="kl">Taux réponse</div></div>
+              <div class="kpi ${ss.rdv>0?'ok':''}"><div class="kv">${ss.rdv}</div><div class="kl">RDV</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="alert-sf show" style="background:${minData?(winner==='Trop tôt'?'#f8f8f8':winner==='Emma'?'#dbeafe':'#ede9fe'):'#fff8e1'};border-color:${minData?(winner==='Emma'?'#3b82f6':winner==='Sami'?'#8b5cf6':'#ddd'):'#ffe082'};color:${minData?(winner==='Emma'?'#1d4ed8':winner==='Sami'?'#6d28d9':'#374151'):'#7d4e00'}">
+          ${minData ? `Gagnant : <strong>${winner}</strong> — ${winner==='Trop tôt'?'scores identiques, continuer le test':winner+' génère plus de réponses'}` : `Test en cours — minimum 20 envois par groupe requis pour conclure (Emma: ${se.sent}, Sami: ${ss.sent})`}
+        </div>
+      </div>`;
+    })()}
   </div>`;
 }
 
@@ -933,7 +1016,7 @@ function openModal(id = null) {
   }
 
   // Fill form
-  const defs = {nom:'',cabinet:'',spec:'',dept:'',ville:'',email:'',tel:'',site:'',linkedin:'',scoreHunter:'',tier:'',gads:'Non',ctx:'',stage:'nouveaux',dateRdv:'',notes:''};
+  const defs = {nom:'',cabinet:'',spec:'',dept:'',ville:'',email:'',tel:'',site:'',linkedin:'',scoreHunter:'',tier:'',groupe:'',gads:'Non',ctx:'',stage:'nouveaux',dateRdv:'',notes:''};
   Object.keys(defs).forEach(k => {
     const el = document.getElementById('f-'+k);
     if (el) el.value = p ? (p[k]??defs[k]) : defs[k];
@@ -1110,6 +1193,7 @@ function saveModal() {
     linkedin:document.getElementById('f-linkedin').value.trim(),
     scoreHunter: document.getElementById('f-score').value,
     tier:    document.getElementById('f-tier').value,
+    groupe:  document.getElementById('f-groupe').value,
     gads:    document.getElementById('f-gads').value,
     ctx:     document.getElementById('f-ctx').value.trim(),
     stage:   document.getElementById('f-stage').value,
@@ -1153,6 +1237,8 @@ function liveScore() {
 function del(id) {
   if (!confirm('Supprimer ce prospect ?')) return;
   data = data.filter(p=>p.id!==id);
+  deletedIds.add(id);
+  persistDeleted();
   persist(); render();
 }
 
