@@ -314,6 +314,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
   <div class="tbr">
     <button class="btn btns" onclick="exportData()">↓ Export</button>
     <button class="btn btns" onclick="document.getElementById('fileInp').click()">↑ Import</button>
+    <button class="btn btns" style="color:var(--red)" onclick="if(confirm('Vider le cache local et recharger depuis prospects.json ?')){localStorage.clear();location.reload()}" title="Recharge les données depuis prospects.json en vidant le localStorage">↺ Vider cache</button>
   </div>
 </div>
 <input type="file" id="fileInp" accept=".json" style="display:none" onchange="importData(event)">
@@ -594,9 +595,9 @@ const SEED = [
               ['j0','j3','j7','j14'].forEach(st => {
                 if (!dup.seq) dup.seq = emptySeq();
                 if (!dup.seq[st]) dup.seq[st] = emptySeq()[st];
-                if (rp.seq?.[st]?.corps  && !dup.seq[st].corps)    dup.seq[st].corps     = rp.seq[st].corps;
-                if (rp.seq?.[st]?.objet  && !dup.seq[st].objet)    dup.seq[st].objet     = rp.seq[st].objet;
-                if (rp.seq?.[st]?.validated !== undefined)           dup.seq[st].validated = rp.seq[st].validated;
+                if (rp.seq?.[st]?.corps)     dup.seq[st].corps     = rp.seq[st].corps;
+                if (rp.seq?.[st]?.objet)     dup.seq[st].objet     = rp.seq[st].objet;
+                if (rp.seq?.[st]?.validated !== undefined) dup.seq[st].validated = rp.seq[st].validated;
                 if (rp.seq?.[st]?.sent && !dup.seq[st].sent) {
                   dup.seq[st].sent = true;
                   if (rp.seq[st].sentAt) dup.seq[st].sentAt = rp.seq[st].sentAt;
