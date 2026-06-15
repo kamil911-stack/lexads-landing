@@ -14,6 +14,7 @@ jobs:
       - name: Deploy to Netlify
         run: |
           npm install -g netlify-cli
+          netlify env:set GITHUB_TOKEN "${{ secrets.GITHUB_TOKEN }}" --site b8b61ded-385c-4e37-8605-dfbe477c3200
           netlify deploy \
             --dir=livrables/crm-site \
             --functions=livrables/crm-site/netlify/functions \
