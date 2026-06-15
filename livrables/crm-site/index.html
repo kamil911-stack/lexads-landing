@@ -500,10 +500,10 @@ const SEED = [
 /* ── INIT ────────────────────────────────────────── */
 (async function init() {
   const saved = JSON.parse(localStorage.getItem('pf_crm_v2') || 'null');
-  if (saved && Array.isArray(saved) && saved.length) {
+  const hasLocal = saved && Array.isArray(saved) && saved.length;
+  if (hasLocal) {
     data = saved.map(ensureFields);
   } else {
-    // Try migrate v1
     const old = JSON.parse(localStorage.getItem('pf_crm_v1') || '[]');
     if (old.length) {
       data = old.map(p => ensureFields({
@@ -531,10 +531,29 @@ const SEED = [
       data = SEED;
     }
   }
-  persist();
   render();
 
-  // Fetch Notion prospects via Netlify Function (Hunter → Notion → CRM)
+  // Source 1 — prospects.json (fichier statique Hunter, toujours à jour)
+  try {
+    const r = await fetch('/prospects.json?t=' + Date.now());
+    if (r.ok) {
+      const remote = await r.json();
+      if (Array.isArray(remote) && remote.length) {
+        if (!hasLocal) {
+          data = remote.map(ensureFields);
+        } else {
+          remote.forEach(rp => {
+            const dup = data.find(p => p.id === rp.id || (rp.email && p.email === rp.email));
+            if (!dup) { data.push(ensureFields(rp)); }
+          });
+        }
+        persist();
+        render();
+      }
+    }
+  } catch(e) {}
+
+  // Source 2 — Netlify Function (Notion, live)
   try {
     const resp = await fetch('/.netlify/functions/prospects?t=' + Date.now());
     if (resp.ok) {
@@ -542,10 +561,8 @@ const SEED = [
       if (Array.isArray(remote) && remote.length) {
         let changed = false;
         remote.forEach(rp => {
-          if (!data.find(p => p.id === rp.id)) {
-            data.push(ensureFields(rp));
-            changed = true;
-          }
+          const dup = data.find(p => p.id === rp.id || (rp.email && p.email === rp.email));
+          if (!dup) { data.push(ensureFields(rp)); changed = true; }
         });
         if (changed) { persist(); render(); }
       }
