@@ -20,13 +20,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre fiche Google Vincennes — une question","corps":"Maître Charnois,\n\nVotre cabinet affiche 5,0/5 sur Google Maps à Vincennes — c'est rare, et c'est un signal de confiance fort.\n\nMais quand un particulier cherche \"avocat droit de la famille Vincennes\" sur Google, votre fiche n'apparaît pas dans les annonces payantes. Vos confrères qui s'y trouvent captent des dossiers que vous ne voyez jamais.\n\nChez Perflux, on gère exclusivement des campagnes Google Ads pour avocats : un dossier famille en Île-de-France représente entre 2 000 et 4 000 € de CA. Avec un budget ciblé sur votre zone, vous récupérez ces dossiers.\n\n15 minutes suffisent pour voir si c'est pertinent pour votre cabinet.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre fiche Google Vincennes — une question",
+        "corps": "Maître Charnois,\n\nVotre cabinet affiche 5,0/5 sur Google Maps à Vincennes — c'est rare, et c'est un signal de confiance fort.\n\nMais quand un particulier cherche \"avocat droit de la famille Vincennes\" sur Google, votre fiche n'apparaît pas dans les annonces payantes. Vos confrères qui s'y trouvent captent des dossiers que vous ne voyez jamais.\n\nChez Perflux, on gère exclusivement des campagnes Google Ads pour avocats : un dossier famille en Île-de-France représente entre 2 000 et 4 000 € de CA. Avec un budget ciblé sur votre zone, vous récupérez ces dossiers.\n\n15 minutes suffisent pour voir si c'est pertinent pour votre cabinet.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-25T00:00:00.000Z"
+    "createdAt": "2026-05-25T00:00:00Z"
   },
   {
     "id": "p_cabinet_avocat_bacle_fr",
@@ -49,13 +93,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre cabinet Joinville — audit Google Ads gratuit","corps":"Maître Baclé,\n\nJ'ai regardé votre cabinet sur bacle-avocat.fr : droit immobilier et droit de la famille à Joinville-le-Pont. Votre zone n'est pas saturée sur Google Ads — c'est une fenêtre à exploiter.\n\nJe réalise des audits gratuits de visibilité Google pour les cabinets que je sélectionne. En 30 minutes, vous savez exactement quelles requêtes vos confrères utilisent pour capter des dossiers dans votre zone.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre cabinet Joinville — audit Google Ads gratuit",
+        "corps": "Maître Baclé,\n\nJ'ai regardé votre cabinet sur bacle-avocat.fr : droit immobilier et droit de la famille à Joinville-le-Pont. Votre zone n'est pas saturée sur Google Ads — c'est une fenêtre à exploiter.\n\nJe réalise des audits gratuits de visibilité Google pour les cabinets que je sélectionne. En 30 minutes, vous savez exactement quelles requêtes vos confrères utilisent pour capter des dossiers dans votre zone.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-25T00:00:00.000Z"
+    "createdAt": "2026-05-25T00:00:00Z"
   },
   {
     "id": "p_bonzoug_orange_fr",
@@ -78,13 +166,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre cabinet Villejuif — visibilité Google","corps":"Maître Bonzougou,\n\nJ'ai consulté votre site maitre-bonzougou.fr : droit de la famille, contrats, immobilier à Villejuif — un profil généraliste bien positionné sur une commune dense.\n\nCe que j'observe : aucune annonce Google Ads sur \"avocat droit de la famille Villejuif\" ni \"avocat divorce 94\". Ces requêtes existent et partent chez des confrères d'autres villes.\n\nPerflux gère des campagnes Google Ads uniquement pour avocats. Un dossier famille ou immobilier représente entre 1 500 et 4 000 € de CA. Avec votre offre multi-matières, chaque clic est une opportunité de dossier.\n\n15 minutes pour valider si c'est pertinent pour votre cabinet.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre cabinet Villejuif — visibilité Google",
+        "corps": "Maître Bonzougou,\n\nJ'ai consulté votre site maitre-bonzougou.fr : droit de la famille, contrats, immobilier à Villejuif — un profil généraliste bien positionné sur une commune dense.\n\nCe que j'observe : aucune annonce Google Ads sur \"avocat droit de la famille Villejuif\" ni \"avocat divorce 94\". Ces requêtes existent et partent chez des confrères d'autres villes.\n\nPerflux gère des campagnes Google Ads uniquement pour avocats. Un dossier famille ou immobilier représente entre 1 500 et 4 000 € de CA. Avec votre offre multi-matières, chaque clic est une opportunité de dossier.\n\n15 minutes pour valider si c'est pertinent pour votre cabinet.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-25T00:00:00.000Z"
+    "createdAt": "2026-05-25T00:00:00Z"
   },
   {
     "id": "p_thibolot_gmail_com",
@@ -107,13 +239,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre cabinet Créteil — audit visibilité Google","corps":"Maître Thibolot,\n\nJ'ai consulté votre site avocat-thibolot.com : droit de la famille à Créteil. Les requêtes \"avocat divorce Créteil\" et \"avocat garde enfant 94\" sont très peu occupées sur Google Ads — un cabinet bien positionné y prend des dossiers chaque semaine.\n\nJe réalise des audits gratuits de visibilité pour les cabinets que je sélectionne. En 30 minutes, vous avez le tableau exact de la concurrence dans votre zone.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre cabinet Créteil — audit visibilité Google",
+        "corps": "Maître Thibolot,\n\nJ'ai consulté votre site avocat-thibolot.com : droit de la famille à Créteil. Les requêtes \"avocat divorce Créteil\" et \"avocat garde enfant 94\" sont très peu occupées sur Google Ads — un cabinet bien positionné y prend des dossiers chaque semaine.\n\nJe réalise des audits gratuits de visibilité pour les cabinets que je sélectionne. En 30 minutes, vous avez le tableau exact de la concurrence dans votre zone.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-24T00:00:00.000Z"
+    "createdAt": "2026-05-24T00:00:00Z"
   },
   {
     "id": "p_avocatsimaogomes_gmail_com",
@@ -136,13 +312,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Avocat immobilier Arpajon — opportunité Google","corps":"Maître Simao-Gomes,\n\nArpajon et l'Essonne sud ont peu d'avocats en droit immobilier actifs sur Google Ads. C'est une opportunité directe pour votre cabinet.\n\nLes particuliers cherchent \"avocat droit immobilier Essonne\" ou \"avocat achat immobilier 91\" — ces requêtes sont peu disputées, et un dossier immobilier représente entre 1 500 et 3 000 € de CA.\n\nChez Perflux, on crée des campagnes Google Ads exclusivement pour avocats. Votre site est déjà en place — il suffit d'y envoyer les bons visiteurs.\n\n15 minutes suffisent pour évaluer le potentiel sur votre zone.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Avocat immobilier Arpajon — opportunité Google",
+        "corps": "Maître Simao-Gomes,\n\nArpajon et l'Essonne sud ont peu d'avocats en droit immobilier actifs sur Google Ads. C'est une opportunité directe pour votre cabinet.\n\nLes particuliers cherchent \"avocat droit immobilier Essonne\" ou \"avocat achat immobilier 91\" — ces requêtes sont peu disputées, et un dossier immobilier représente entre 1 500 et 3 000 € de CA.\n\nChez Perflux, on crée des campagnes Google Ads exclusivement pour avocats. Votre site est déjà en place — il suffit d'y envoyer les bons visiteurs.\n\n15 minutes suffisent pour évaluer le potentiel sur votre zone.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-25T00:00:00.000Z"
+    "createdAt": "2026-05-25T00:00:00Z"
   },
   {
     "id": "p_me_masson_avocat_gmail_com",
@@ -165,13 +385,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre cabinet Créteil — audit Google Ads gratuit","corps":"Maître Masson,\n\nJ'ai regardé votre site avocat-masson.fr : droit des contrats et droit civil à Créteil. Vos confrères spécialisés dans votre domaine ne sont quasiment pas présents sur Google Ads dans le Val-de-Marne — c'est une position rare.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous voyez exactement quelles requêtes vous permettraient de capter des dossiers sans toucher à votre développement actuel.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre cabinet Créteil — audit Google Ads gratuit",
+        "corps": "Maître Masson,\n\nJ'ai regardé votre site avocat-masson.fr : droit des contrats et droit civil à Créteil. Vos confrères spécialisés dans votre domaine ne sont quasiment pas présents sur Google Ads dans le Val-de-Marne — c'est une position rare.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous voyez exactement quelles requêtes vous permettraient de capter des dossiers sans toucher à votre développement actuel.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-24T00:00:00.000Z"
+    "createdAt": "2026-05-24T00:00:00Z"
   },
   {
     "id": "p_avocat_cdanielian_com",
@@ -194,13 +458,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre site danielian-avocat.com — une observation","corps":"Maître Danielian,\n\nJ'ai regardé votre site danielian-avocat.com — il est propre, professionnel, et cible bien les dossiers famille en Essonne.\n\nLe problème : quand quelqu'un cherche \"avocat droit de la famille Évry\" sur Google, votre site n'apparaît pas dans les résultats payants. Ce sont des dossiers qui partent chez d'autres.\n\nPerflux gère des campagnes Google Ads exclusivement pour avocats. En droit de la famille, un dossier représente entre 2 000 et 4 000 € de CA. Avec un budget ciblé sur Évry et l'Essonne, vous récupérez ces dossiers.\n\n15 minutes suffisent pour voir si c'est adapté à votre profil.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre site danielian-avocat.com — une observation",
+        "corps": "Maître Danielian,\n\nJ'ai regardé votre site danielian-avocat.com — il est propre, professionnel, et cible bien les dossiers famille en Essonne.\n\nLe problème : quand quelqu'un cherche \"avocat droit de la famille Évry\" sur Google, votre site n'apparaît pas dans les résultats payants. Ce sont des dossiers qui partent chez d'autres.\n\nPerflux gère des campagnes Google Ads exclusivement pour avocats. En droit de la famille, un dossier représente entre 2 000 et 4 000 € de CA. Avec un budget ciblé sur Évry et l'Essonne, vous récupérez ces dossiers.\n\n15 minutes suffisent pour voir si c'est adapté à votre profil.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-25T00:00:00.000Z"
+    "createdAt": "2026-05-25T00:00:00Z"
   },
   {
     "id": "p_contact_yanngre_com",
@@ -223,13 +531,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet Gré Créteil — audit Google Ads gratuit","corps":"Maître Gré,\n\nJ'ai consulté votre site yanngre.com : droit civil et droit des contrats à Créteil. C'est une niche que les agences générales n'adressent pas — et sur Google Ads, vos confrères spécialisés dans le même domaine sont absents.\n\nJe réalise des audits de visibilité Google gratuits pour les cabinets que je sélectionne. En 30 minutes, vous savez précisément ce que vous ratez et ce que vous pouvez capter.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet Gré Créteil — audit Google Ads gratuit",
+        "corps": "Maître Gré,\n\nJ'ai consulté votre site yanngre.com : droit civil et droit des contrats à Créteil. C'est une niche que les agences générales n'adressent pas — et sur Google Ads, vos confrères spécialisés dans le même domaine sont absents.\n\nJe réalise des audits de visibilité Google gratuits pour les cabinets que je sélectionne. En 30 minutes, vous savez précisément ce que vous ratez et ce que vous pouvez capter.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-24T00:00:00.000Z"
+    "createdAt": "2026-05-24T00:00:00Z"
   },
   {
     "id": "p_contact_bellot_avocat_com",
@@ -252,13 +604,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre cabinet Vitry — et Google Ads","corps":"Maître Bellot,\n\nVotre cabinet bellot-avocat.com est bien positionné à Vitry-sur-Seine, mais les annonces Google Ads sur \"avocat divorce Vitry\" ou \"avocat droit de la famille Val-de-Marne\" sont occupées par des confrères d'autres villes.\n\nUn dossier de droit de la famille représente entre 2 000 et 4 000 € de CA — et ces requêtes restent peu disputées dans votre zone.\n\nPerflux gère des campagnes Google Ads exclusivement pour avocats. Votre site est là, il faut juste y envoyer les bons clients.\n\n15 minutes pour voir si ça colle avec votre activité.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre cabinet Vitry — et Google Ads",
+        "corps": "Maître Bellot,\n\nVotre cabinet bellot-avocat.com est bien positionné à Vitry-sur-Seine, mais les annonces Google Ads sur \"avocat divorce Vitry\" ou \"avocat droit de la famille Val-de-Marne\" sont occupées par des confrères d'autres villes.\n\nUn dossier de droit de la famille représente entre 2 000 et 4 000 € de CA — et ces requêtes restent peu disputées dans votre zone.\n\nPerflux gère des campagnes Google Ads exclusivement pour avocats. Votre site est là, il faut juste y envoyer les bons clients.\n\n15 minutes pour voir si ça colle avec votre activité.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-24T00:00:00.000Z"
+    "createdAt": "2026-05-24T00:00:00Z"
   },
   {
     "id": "p_chemla_avocat_bbox_fr",
@@ -281,13 +677,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet Chemla Vitry — audit visibilité Google","corps":"Maître Chemla,\n\nJ'ai regardé votre site avocat-chemla.fr : droit de la famille à Vitry-sur-Seine. Sur Google Ads, les requêtes liées à votre spécialité dans votre zone sont presque entièrement libres — c'est inhabituel pour une commune de cette taille.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous avez la carte exacte de vos opportunités Google Ads à Vitry et dans le 94.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet Chemla Vitry — audit visibilité Google",
+        "corps": "Maître Chemla,\n\nJ'ai regardé votre site avocat-chemla.fr : droit de la famille à Vitry-sur-Seine. Sur Google Ads, les requêtes liées à votre spécialité dans votre zone sont presque entièrement libres — c'est inhabituel pour une commune de cette taille.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous avez la carte exacte de vos opportunités Google Ads à Vitry et dans le 94.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-05-25T00:00:00.000Z"
+    "createdAt": "2026-05-25T00:00:00Z"
   },
   {
     "id": "p_norman_delain_avocat_com",
@@ -310,13 +750,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Norman Delain — votre niche presse et Google Ads","corps":"Maître Delain,\n\nJ'ai vu votre profil LinkedIn et votre cabinet delain-avocat.com : droit pénal et droit de la presse à Évry — une combinaison rare, à forte valeur.\n\nCe qui m'a frappé : aucune annonce Google Ads sur \"avocat pénal Essonne\" ou \"avocat droit de la presse Île-de-France\". Ces requêtes existent, les dossiers pénaux représentent entre 2 500 et 6 000 € de CA, et vos confrères n'y sont pas.\n\nVotre présence LinkedIn est un atout. Les Google Ads complètent là où LinkedIn n'atteint pas : les justiciables en urgence, qui cherchent sur Google à 23h.\n\n15 minutes suffisent pour en parler.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Norman Delain — votre niche presse et Google Ads",
+        "corps": "Maître Delain,\n\nJ'ai vu votre profil LinkedIn et votre cabinet delain-avocat.com : droit pénal et droit de la presse à Évry — une combinaison rare, à forte valeur.\n\nCe qui m'a frappé : aucune annonce Google Ads sur \"avocat pénal Essonne\" ou \"avocat droit de la presse Île-de-France\". Ces requêtes existent, les dossiers pénaux représentent entre 2 500 et 6 000 € de CA, et vos confrères n'y sont pas.\n\nVotre présence LinkedIn est un atout. Les Google Ads complètent là où LinkedIn n'atteint pas : les justiciables en urgence, qui cherchent sur Google à 23h.\n\n15 minutes suffisent pour en parler.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_contact_cabinet_mbavocats_fr",
@@ -339,13 +823,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet MB Avocats Évry — audit Google Ads gratuit","corps":"Maître,\n\nJ'ai consulté votre site cabinet-mbavocats.fr : trois avocats, deux bureaux à Évry et Fontainebleau, consultations vidéo disponibles — un cabinet qui a déjà fait le choix du digital.\n\nCe que j'ai noté : aucune campagne Google Ads visible sur vos deux zones. Avec deux implantations géographiques, une campagne bien ciblée est un levier direct de dossiers entrants.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous voyez le potentiel exact.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet MB Avocats Évry — audit Google Ads gratuit",
+        "corps": "Maître,\n\nJ'ai consulté votre site cabinet-mbavocats.fr : trois avocats, deux bureaux à Évry et Fontainebleau, consultations vidéo disponibles — un cabinet qui a déjà fait le choix du digital.\n\nCe que j'ai noté : aucune campagne Google Ads visible sur vos deux zones. Avec deux implantations géographiques, une campagne bien ciblée est un levier direct de dossiers entrants.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous voyez le potentiel exact.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_nerrant_stephane_gmail_com",
@@ -368,13 +896,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Maître Nerrant — fiscaliste et Google Ads","corps":"Maître Nerrant,\n\nVotre profil m'a intrigué : avocat fiscal et civil depuis plus de 20 ans à Morsang-sur-Orge, membre de l'IACF et du Club Business Essonne — un réseau solide.\n\nMais sur Google, les requêtes \"avocat fiscaliste Essonne\" ou \"avocat droit fiscal 91\" ne renvoient aucune annonce de votre cabinet. Ces recherches viennent de professionnels et particuliers avec des enjeux élevés — les dossiers fiscaux sont parmi les plus rentables.\n\nPerflux gère exclusivement des campagnes Google Ads pour avocats. Ce serait un levier complémentaire à votre réseau, pas un remplacement.\n\n15 minutes pour voir si ça a du sens.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Maître Nerrant — fiscaliste et Google Ads",
+        "corps": "Maître Nerrant,\n\nVotre profil m'a intrigué : avocat fiscal et civil depuis plus de 20 ans à Morsang-sur-Orge, membre de l'IACF et du Club Business Essonne — un réseau solide.\n\nMais sur Google, les requêtes \"avocat fiscaliste Essonne\" ou \"avocat droit fiscal 91\" ne renvoient aucune annonce de votre cabinet. Ces recherches viennent de professionnels et particuliers avec des enjeux élevés — les dossiers fiscaux sont parmi les plus rentables.\n\nPerflux gère exclusivement des campagnes Google Ads pour avocats. Ce serait un levier complémentaire à votre réseau, pas un remplacement.\n\n15 minutes pour voir si ça a du sens.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_isabelle_paris_avocat_conseil_91_fr",
@@ -397,13 +969,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet Paris Évry — audit Google Ads gratuit","corps":"Maître Paris,\n\nJ'ai consulté cabinetavocat-isabelleparis.fr : plus de 30 ans d'ancrage à Évry, profil généraliste droit civil — famille, contrats, immobilier, commercial. Un cabinet établi.\n\nCe qui m'a frappé : aucune annonce Google Ads sur vos domaines dans votre zone. Votre réseau de recommandations fonctionne — mais les dossiers qui arrivent via Google partent ailleurs.\n\nJe réalise des audits gratuits de visibilité pour des cabinets sélectionnés. En 30 minutes, vous voyez exactement ce qui vous échappe.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet Paris Évry — audit Google Ads gratuit",
+        "corps": "Maître Paris,\n\nJ'ai consulté cabinetavocat-isabelleparis.fr : plus de 30 ans d'ancrage à Évry, profil généraliste droit civil — famille, contrats, immobilier, commercial. Un cabinet établi.\n\nCe qui m'a frappé : aucune annonce Google Ads sur vos domaines dans votre zone. Votre réseau de recommandations fonctionne — mais les dossiers qui arrivent via Google partent ailleurs.\n\nJe réalise des audits gratuits de visibilité pour des cabinets sélectionnés. En 30 minutes, vous voyez exactement ce qui vous échappe.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_ldeleenheer_avocat_gmail_com",
@@ -426,13 +1042,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Votre blog droit de la famille — une observation","corps":"Maître de Leenheer,\n\nJ'ai lu vos articles sur le divorce en Val-de-Marne et la location Airbnb — bon contenu, publié en 2020. Vous avez clairement commencé à investir dans le digital.\n\nLe blog s'est arrêté, mais les recherches Google, elles, n'ont pas arrêté. Quelqu'un qui tape \"avocat divorce Saint-Maur\" aujourd'hui ne voit pas votre cabinet.\n\nLes Google Ads donnent des résultats en 48h là où le référencement organique prend des mois. Et en droit de la famille, un dossier représente entre 2 000 et 4 000 € de CA.\n\nÇa vaut 15 minutes d'appel.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Votre blog droit de la famille — une observation",
+        "corps": "Maître de Leenheer,\n\nJ'ai lu vos articles sur le divorce en Val-de-Marne et la location Airbnb — bon contenu, publié en 2020. Vous avez clairement commencé à investir dans le digital.\n\nLe blog s'est arrêté, mais les recherches Google, elles, n'ont pas arrêté. Quelqu'un qui tape \"avocat divorce Saint-Maur\" aujourd'hui ne voit pas votre cabinet.\n\nLes Google Ads donnent des résultats en 48h là où le référencement organique prend des mois. Et en droit de la famille, un dossier représente entre 2 000 et 4 000 € de CA.\n\nÇa vaut 15 minutes d'appel.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_contact_debrenne_dehay_avocats_fr",
@@ -455,13 +1115,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet Debrenne-Dehay — audit Google Ads","corps":"Maître,\n\nJ'ai consulté votre site debrenne-dehay-avocats.fr : deux avocats associés, deux bureaux à Créteil et Vitry-sur-Seine, spécialités complémentaires dont le droit pénal et administratif.\n\nAucune annonce Google Ads n'est active sur \"avocat pénal Créteil\" ni \"avocat droit administratif Val-de-Marne\". Ces requêtes existent et un cabinet avec deux implantations géographiques les exploite naturellement mieux qu'un cabinet solo.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous avez le diagnostic.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet Debrenne-Dehay — audit Google Ads",
+        "corps": "Maître,\n\nJ'ai consulté votre site debrenne-dehay-avocats.fr : deux avocats associés, deux bureaux à Créteil et Vitry-sur-Seine, spécialités complémentaires dont le droit pénal et administratif.\n\nAucune annonce Google Ads n'est active sur \"avocat pénal Créteil\" ni \"avocat droit administratif Val-de-Marne\". Ces requêtes existent et un cabinet avec deux implantations géographiques les exploite naturellement mieux qu'un cabinet solo.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. En 30 minutes, vous avez le diagnostic.\n\nIntéressé ? Confirmez par retour.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_aurelie_dussud_adavocat_fr",
@@ -484,13 +1188,57 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet Dussud Le Perreux — et Google Ads","corps":"Maître Dussud,\n\nMédiatrice certifiée IFOMENE et avocate en droit civil, pénal et baux à Le Perreux-sur-Marne — votre profil est plus complet que la plupart.\n\nCe qui manque : une présence sur les annonces Google. Quand un justiciable cherche \"avocat baux Le Perreux\" ou \"avocat pénal Val-de-Marne\", votre site dussud-avocat.fr n'apparaît pas dans les résultats payants.\n\nPerflux gère des campagnes Google Ads exclusivement pour avocats. Dans votre zone, ces requêtes sont peu disputées — et un dossier représente entre 1 500 et 4 000 € de CA selon la matière.\n\n15 minutes pour voir ce que ça peut apporter.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet Dussud Le Perreux — et Google Ads",
+        "corps": "Maître Dussud,\n\nMédiatrice certifiée IFOMENE et avocate en droit civil, pénal et baux à Le Perreux-sur-Marne — votre profil est plus complet que la plupart.\n\nCe qui manque : une présence sur les annonces Google. Quand un justiciable cherche \"avocat baux Le Perreux\" ou \"avocat pénal Val-de-Marne\", votre site dussud-avocat.fr n'apparaît pas dans les résultats payants.\n\nPerflux gère des campagnes Google Ads exclusivement pour avocats. Dans votre zone, ces requêtes sont peu disputées — et un dossier représente entre 1 500 et 4 000 € de CA selon la matière.\n\n15 minutes pour voir ce que ça peut apporter.\n\nRéservez directement : https://calendly.com/kamil-perflux/30min\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   },
   {
     "id": "p_alexandra_lesergent_wanadoo_fr",
@@ -513,12 +1261,56 @@
     "dateRdv": "",
     "notes": "",
     "seq": {
-      "j0":  {"sent":false,"sentAt":null,"objet":"Cabinet Le Sergent Saint-Maur — audit Google Ads","corps":"Maître Le Sergent,\n\nJ'ai consulté votre site lesergent-alexandra.fr : inscrite au barreau du Val-de-Marne depuis 2004, ancienne enseignante à l'EFB de Paris — un profil de référence dans votre barreau.\n\nCe que j'observe : aucune visibilité Google Ads sur \"avocat droit de la famille Saint-Maur\" ni \"avocat 94\". Vingt-deux ans d'ancrage local — mais les dossiers qui arrivent via Google partent chez d'autres.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. Confirmez par retour si vous souhaitez y participer.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j3":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j7":  {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-      "j14": {"sent":false,"sentAt":null,"objet":"","corps":"","validated":false,"opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
+      "j0": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "Cabinet Le Sergent Saint-Maur — audit Google Ads",
+        "corps": "Maître Le Sergent,\n\nJ'ai consulté votre site lesergent-alexandra.fr : inscrite au barreau du Val-de-Marne depuis 2004, ancienne enseignante à l'EFB de Paris — un profil de référence dans votre barreau.\n\nCe que j'observe : aucune visibilité Google Ads sur \"avocat droit de la famille Saint-Maur\" ni \"avocat 94\". Vingt-deux ans d'ancrage local — mais les dossiers qui arrivent via Google partent chez d'autres.\n\nJe réalise des audits gratuits pour des cabinets sélectionnés. Confirmez par retour si vous souhaitez y participer.\n\nKamil Khebbache\nFondateur — Perflux\n07 66 47 03 57\nperflux.fr",
+        "validated": true,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j3": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j7": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      },
+      "j14": {
+        "sent": false,
+        "sentAt": null,
+        "objet": "",
+        "corps": "",
+        "validated": false,
+        "opened": false,
+        "openedAt": null,
+        "replied": false,
+        "repliedAt": null,
+        "replyContent": ""
+      }
     },
     "activityLog": [],
-    "createdAt": "2026-06-15T00:00:00.000Z"
+    "createdAt": "2026-06-15T00:00:00Z"
   }
 ]
