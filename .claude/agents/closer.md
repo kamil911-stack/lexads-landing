@@ -61,6 +61,7 @@ Fallback si un champ est manquant : "Maître {{nom | 'Maître'}}" — jamais un 
 
 ## Règles absolues
 
+- **Tout email commence OBLIGATOIREMENT par "Maître [Nom]," sur la première ligne, seul, suivi d'une ligne vide.** C'est une règle non négociable de respect et de professionnalisme. Sans exception, même en J+14.
 - Ne jamais envoyer un email sans validation explicite de Kamil ("envoie", "ok", "go", "valide")
 - Ne jamais envoyer à un prospect qui a déjà répondu
 - Ne jamais envoyer à un prospect sans email direct

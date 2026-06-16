@@ -69,6 +69,7 @@ Toujours écrire "Maître [Nom]" en guise d'interpellation.
 
 ## Règles absolues
 
+- **Tout email commence OBLIGATOIREMENT par "Maître [Nom]," sur la première ligne, seul, suivi d'une ligne vide.** C'est une règle non négociable de respect et de professionnalisme. Sans exception, même en J+14.
 - Ne jamais mentionner de prix en J0 et J+3
 - Ne jamais envoyer sans validation explicite de Kamil ("envoie", "ok", "go", "valide")
 - Ne jamais envoyer à un prospect qui a déjà répondu
