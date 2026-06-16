@@ -7,6 +7,19 @@
 
 ---
 
+## 2026-06-16 (après-midi)
+
+### 41 emails J0 envoyés + suppression CRM
+
+- CRM web (livrables/crm-site/) supprimé, Notion devient source unique de vérité
+- 41 emails J0 envoyés à tous les prospects (avocats 91 + 94), 41/41 OK
+- Bug SMTP IONOS corrigé : nouveau SmtpClient par email dans send_j0.ps1
+- "Envoyé J0" coché + "Statut" = "Contacté" mis à jour dans Notion pour les 41
+- Règle zéro em dash ajoutée dans closer.md et sami.md
+- Alerte : DKIM manquant sur perflux.fr, à configurer dans IONOS
+
+---
+
 ## 2026-06-16
 
 ### Migration CRM → Notion pure + règle "Maître [Nom]" obligatoire
