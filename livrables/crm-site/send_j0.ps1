@@ -15,7 +15,7 @@ $SMTP_PORT  = 587   # STARTTLS
 $FROM       = $env:IONOS_FROM_EMAIL
 $PASSWORD   = $env:IONOS_PASSWORD
 $CRM_URL    = if ($env:PERFLUX_CRM_URL) { $env:PERFLUX_CRM_URL.TrimEnd('/') } else { 'https://perflux-crm.netlify.app' }
-$DELAY_SEC  = 240   # 4 minutes entre chaque envoi
+$DELAY_SEC  = 150   # 2.5 minutes entre chaque envoi
 
 if (-not $FROM)     { throw "IONOS_FROM_EMAIL non definie" }
 if (-not $PASSWORD) { throw "IONOS_PASSWORD non definie" }
