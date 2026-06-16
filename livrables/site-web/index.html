@@ -357,21 +357,23 @@
     }
 
     .hero-trust {
-      display: flex;
-      gap: 0;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
       padding-top: 28px;
       border-top: 1px solid var(--border);
     }
 
     .trust-item {
-      padding-right: 24px;
-      margin-right: 24px;
-      border-right: 1px solid var(--border);
+      padding-right: 20px;
       font-size: 13px;
       color: var(--ink-muted);
     }
-    .trust-item:last-child { border-right: none; padding-right: 0; margin-right: 0; }
+    .trust-item:nth-child(even) {
+      padding-right: 0;
+      padding-left: 20px;
+      border-left: 1px solid var(--border);
+    }
     .trust-item strong {
       display: block;
       font-size: 15px;
@@ -677,56 +679,50 @@
     }
 
     /* ==============================
-       ROI
+       RÉSULTATS
     ============================== */
-    .roi { padding: 96px 0; }
+    .resultats { padding: 96px 0; }
 
-    .roi-inner { text-align: center; }
+    .resultats-grid {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-top: 52px;
+      max-width: 720px;
+    }
 
-    .roi-number {
-      font-family: var(--ff-mono);
-      font-size: clamp(72px, 11vw, 128px);
+    .resultat-stat { flex: 1; }
+
+    .resultat-number {
+      font-family: var(--ff-display);
+      font-size: clamp(52px, 6vw, 80px);
       font-weight: 500;
       color: #fff;
       line-height: 1;
-      margin: 20px 0 10px;
-      letter-spacing: -0.02em;
+      margin-bottom: 14px;
     }
-    .roi-number .accent { color: var(--crimson); }
+    .resultat-number .accent { color: var(--crimson); }
 
-    .roi-caption {
-      font-family: var(--ff-display);
-      font-size: 26px;
-      font-style: italic;
-      font-weight: 400;
-      color: rgba(255,255,255,0.6);
-      margin-bottom: 52px;
+    .resultat-label {
+      font-size: 15px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.5;
+      max-width: 220px;
     }
 
-    .roi-calc {
-      display: flex;
-      justify-content: center;
-      gap: 48px;
-      flex-wrap: wrap;
-      max-width: 680px;
-      margin: 0 auto 52px;
-      padding: 32px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 6px;
-      border: 1px solid rgba(255,255,255,0.08);
+    .resultat-divider {
+      width: 1px;
+      height: 100px;
+      background: rgba(255,255,255,0.15);
+      flex-shrink: 0;
+      margin: 0 56px;
     }
 
-    .roi-calc-num {
-      font-family: var(--ff-mono);
-      font-size: 20px;
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 4px;
-    }
-
-    .roi-calc-label {
+    .resultats-note {
       font-size: 12px;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255,255,255,0.3);
+      margin-top: 52px;
+      font-style: italic;
     }
 
     /* ==============================
@@ -864,14 +860,13 @@
     .faq-item.open .faq-chev { transform: rotate(180deg); }
 
     .faq-body {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.28s ease;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.32s ease;
     }
-    .faq-item.open .faq-body { grid-template-rows: 1fr; }
+    .faq-item.open .faq-body { max-height: 600px; }
 
     .faq-body-inner {
-      overflow: hidden;
       font-size: 15px;
       line-height: 1.7;
       color: #555;
@@ -1169,11 +1164,13 @@
     @media (max-width: 600px) {
       .hero { padding: 64px 0 56px; min-height: auto; }
       .hero-ctas { flex-direction: column; }
-      .hero-trust { flex-direction: column; gap: 14px; }
-      .trust-item { border-right: none; padding-right: 0; margin-right: 0; }
+      .hero-trust { grid-template-columns: 1fr 1fr; }
+      .trust-item:nth-child(even) { padding-left: 14px; }
       .section-pad { padding: 64px 0; }
       .proof { padding: 56px 0; }
-      .roi { padding: 64px 0; }
+      .resultats { padding: 64px 0; }
+      .resultats-grid { flex-direction: column; gap: 40px; max-width: 100%; }
+      .resultat-divider { width: 100%; height: 1px; margin: 0; }
       .audit { padding: 64px 0; }
       .nav-links { display: none; }
     }
@@ -1181,7 +1178,8 @@
     @media (prefers-reduced-motion: reduce) {
       .reveal { opacity: 1; transform: none; transition: none; }
       .btn { transition: none; }
-      .faq-body { transition: none; }
+      .faq-body { transition: none; max-height: none; overflow: visible; }
+      .faq-item:not(.open) .faq-body { max-height: 0; overflow: hidden; }
       .faq-chev { transition: none; }
     }
   </style>
@@ -1217,7 +1215,7 @@
     <div class="hero-grid">
       <div>
         <p class="t-eyebrow hero-eyebrow">Agence Google Ads · Avocats · Conformité RIN</p>
-        <h1 class="t-display hero-headline">Vos dossiers<br/>viennent de Google.</h1>
+        <h1 class="t-display hero-headline">Vos dossiers<br/>viennent de<br/>Google Ads.</h1>
         <p class="hero-body">Les cabinets qui dominent leur secteur sur Google ne le doivent pas au hasard. Perflux gère vos campagnes de A à Z, dans le strict respect du Règlement Intérieur National.</p>
         <div class="hero-ctas">
           <a href="#audit" class="btn btn-crimson">
@@ -1400,6 +1398,26 @@
 </section>
 
 
+
+
+<!-- RÉSULTATS -->
+<section class="resultats bg-navy" aria-label="Résultats Perflux Google Ads avocats">
+  <div class="container">
+    <p class="t-eyebrow t-eyebrow-light reveal">Ce que ça rapporte concrètement</p>
+    <div class="resultats-grid">
+      <div class="resultat-stat reveal d1">
+        <div class="resultat-number">12 000<span class="accent">€</span></div>
+        <div class="resultat-label">de CA généré en moyenne par cabinet et par mois</div>
+      </div>
+      <div class="resultat-divider"></div>
+      <div class="resultat-stat reveal d2">
+        <div class="resultat-number">4 à 8</div>
+        <div class="resultat-label">dossiers supplémentaires acquis chaque mois via Google Ads</div>
+      </div>
+    </div>
+    <p class="resultats-note reveal d3">Moyennes observées sur 12 mois. Résultats variables selon la zone géographique, le budget alloué et la spécialité.</p>
+  </div>
+</section>
 
 
 <!-- TARIFS -->
