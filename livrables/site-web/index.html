@@ -1041,8 +1041,164 @@
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
   }
 
-  .toggle::before {
-    transform: translateX(var(--toggle-x, 0px));
+  /* ============ TESTIMONIAL ============ */
+  .testimonial-block {
+    max-width: 680px;
+    margin: 0 auto 52px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border-strong);
+    border-radius: 20px;
+    padding: 30px 36px;
+    text-align: left;
+    position: relative;
+  }
+  .testimonial-quote {
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: var(--ink-dim);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .testimonial-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue) 0%, var(--cyan) 100%);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .testimonial-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+  }
+  .testimonial-role {
+    font-size: 12.5px;
+    color: var(--ink-mute);
+    margin-top: 2px;
+  }
+
+  /* ============ HERO TRUST ============ */
+  .hero-trust {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -36px;
+    margin-bottom: 48px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+
+  /* ============ PRICING SIMPLE ============ */
+  .pricing-simple {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .pricing-range-block {
+    text-align: center;
+    padding: 48px 40px;
+    background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(0,194,255,0.05));
+    border: 1px solid rgba(37,99,235,0.3);
+    border-radius: 24px;
+  }
+  .pr-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+  }
+  .pr-value {
+    font-size: clamp(38px, 6vw, 60px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  .pr-per {
+    font-size: 0.4em;
+    font-weight: 400;
+    color: var(--ink-dim);
+    margin-left: 6px;
+  }
+  .pr-sub {
+    color: var(--ink-dim);
+    font-size: 14px;
+  }
+  .pricing-guarantees {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .pg-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 24px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: border-color .2s;
+  }
+  .pg-item:hover { border-color: var(--border-strong); }
+  .pg-icon {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: rgba(0,194,255,0.1);
+    border: 1px solid rgba(0,194,255,0.3);
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 13px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .pg-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .pg-sub {
+    font-size: 13.5px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+  .pricing-cta-block {
+    text-align: center;
+  }
+  .pricing-cta-block p {
+    color: var(--ink-dim);
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
+  }
+  .pricing-note {
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--ink-mute);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.04em;
   }
 
   /* ============ SCROLL REVEAL ============ */
@@ -1313,7 +1469,7 @@
       <span>Perflux</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#offres">Offres</a></li>
+      <li><a href="#offres">Tarifs</a></li>
       <li><a href="#methode">Méthode</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
@@ -1334,16 +1490,20 @@
         Agence Google Ads — 100% Avocats
       </span>
       <h1>
-        Avocats : transformez votre budget<br/>
-        Google&nbsp;Ads en <span class="gradient-text">dossiers qualifiés</span>
+        Des dossiers qualifiés depuis Google.<br/>
+        <span class="gradient-text">Conformément au RIN du barreau.</span>
       </h1>
-      <p class="hero-sub">Exclusivement pour les avocats en droit civil, pénal et travail.
-Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
+      <p class="hero-sub">L'agence Google Ads 100% dédiée aux avocats. Call tracking sur chaque appel. Rapport mensuel en dossiers, pas en clics. Premiers résultats sous 3 semaines.</p>
       <div class="hero-cta">
         <a href="#audit" class="btn btn-primary">
           Demander mon audit gratuit <span class="arrow">→</span>
         </a>
-        <a href="#offres" class="btn btn-ghost">Voir nos offres</a>
+        <a href="#methode" class="btn btn-ghost">Voir comment ça marche</a>
+      </div>
+      <div class="hero-trust">
+        <span>✓ Réponse sous 24h</span>
+        <span>✓ Sans engagement</span>
+        <span>✓ Conformité RIN garantie</span>
       </div>
 
       <div class="hero-stats">
@@ -1367,15 +1527,16 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
   <!-- SOCIAL PROOF -->
   <section class="section-alt" aria-label="Statistiques du marché Google Ads pour avocats">
     <div class="container social">
-      <div class="avatars">
-        <div class="avatar">M</div>
-        <div class="avatar a2">L</div>
-        <div class="avatar a3">D</div>
-        <div class="avatar a4">P</div>
-        <div class="avatar a5">B</div>
-        <div class="avatar a6">+</div>
+      <div class="testimonial-block">
+        <div class="testimonial-quote">"Je voulais faire de la pub sur Google mais j'avais peur des sanctions du barreau. Perflux a géré toute la conformité. En six semaines, j'ai eu 4 contacts en droit de la famille, dont 3 que j'ai convertis en dossiers."</div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Maître Sophie</div>
+            <div class="testimonial-role">Avocate — Droit de la famille, Versailles (78)</div>
+          </div>
+        </div>
       </div>
-      <p>Rejoignez les cabinets qui génèrent des dossiers via Google.</p>
 
       <div class="stats-grid">
         <div class="stat-card">
@@ -1470,87 +1631,52 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
   </section>
 
 
-  <!-- OFFRES -->
+  <!-- INVESTISSEMENT -->
   <section id="offres">
     <div class="container">
       <div class="section-head">
-        <span class="pill"><span class="dot"></span>Nos formules</span>
-        <h2 style="margin-top: 22px;">Choisissez votre <span class="gradient-text">rythme de croissance</span></h2>
-        <p class="lead">Budget pub toujours séparé de nos honoraires. Vous payez Google directement, jamais via nous.</p>
+        <span class="pill"><span class="dot"></span>Investissement</span>
+        <h2 style="margin-top: 22px;">Transparent dès le premier appel, <span class="gradient-text">adapté à votre cabinet</span></h2>
       </div>
 
-      <div class="toggle-row">
-        <div class="toggle">
-          <button class="active" data-toggle="month">Mensuel</button>
-          <button data-toggle="year">Annuel</button>
+      <div class="pricing-simple">
+
+        <div class="pricing-range-block">
+          <div class="pr-label">Honoraires mensuels HT</div>
+          <div class="pr-value">600€ — 1 600€<span class="pr-per">/mois</span></div>
+          <div class="pr-sub">Selon le nombre de campagnes et la taille du cabinet</div>
         </div>
-        <span class="save-tag">— 10% en annuel</span>
-      </div>
 
-      <div class="pricing-grid">
-
-        <div class="price-card">
-          <div class="plan-name">Lancement</div>
-          <div class="plan-tagline">Tester Google Ads sans risque</div>
-          <div class="price"><span class="amount">600€</span><span class="per">/ mois</span></div>
-          <div class="ht-tag">HT — Engagement 3 mois minimum</div>
-          <a href="#audit" class="btn btn-ghost plan-cta">Démarrer <span class="arrow">→</span></a>
-          <ul class="plan-features">
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>1 campagne Search (1 spécialité, 1 zone)</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Annonces conformes RIN</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Rapport mensuel : budget / appels / coût par lead</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Point téléphonique 30 min/mois</li>
-          </ul>
-          <div class="plan-budget">
-            <strong>Budget pub recommandé</strong>
-            500 – 700€/mois, séparé des honoraires
+        <div class="pricing-guarantees">
+          <div class="pg-item">
+            <div class="pg-icon">✓</div>
+            <div>
+              <div class="pg-title">Budget pub séparé de nos honoraires</div>
+              <div class="pg-sub">500€/mois minimum, versé directement à Google — jamais via nous</div>
+            </div>
+          </div>
+          <div class="pg-item">
+            <div class="pg-icon">✓</div>
+            <div>
+              <div class="pg-title">Zéro commission sur votre budget publicitaire</div>
+              <div class="pg-sub">Honoraires fixes — pas d'incentive à vous faire dépenser plus</div>
+            </div>
+          </div>
+          <div class="pg-item">
+            <div class="pg-icon">✓</div>
+            <div>
+              <div class="pg-title">Votre compte Google Ads vous appartient</div>
+              <div class="pg-sub">Si vous partez, vous gardez l'intégralité de l'historique et des données</div>
+            </div>
           </div>
         </div>
 
-        <div class="price-card featured">
-          <div class="featured-tag">Le plus populaire</div>
-          <div class="plan-name">Développement</div>
-          <div class="plan-tagline">Accélérer sur plusieurs spécialités</div>
-          <div class="price"><span class="amount">1 000€</span><span class="per">/ mois</span></div>
-          <div class="ht-tag">HT — Engagement 3 mois minimum</div>
-          <a href="#audit" class="btn btn-primary plan-cta">Démarrer <span class="arrow">→</span></a>
-          <ul class="plan-features">
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>2-3 campagnes Search</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Call tracking inclus</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>A/B test des annonces en continu</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Tableau de bord temps réel</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Rapport bi-mensuel + accès dashboard</li>
-          </ul>
-          <div class="plan-budget">
-            <strong>Budget pub recommandé</strong>
-            700 – 1 200€/mois, séparé des honoraires
-          </div>
+        <div class="pricing-cta-block">
+          <p>L'audit gratuit de 30 minutes permet d'identifier la formule adaptée et d'estimer le potentiel sur votre zone géographique.</p>
+          <a href="#audit" class="btn btn-primary">Réserver mon audit gratuit <span class="arrow">→</span></a>
+          <div class="pricing-note">Sans engagement · Réponse sous 24h · 30 minutes</div>
         </div>
 
-        <div class="price-card">
-          <div class="plan-name">Cabinet</div>
-          <div class="plan-tagline">Volume de dossiers à remplir</div>
-          <div class="price"><span class="amount">1 600€</span><span class="per">/ mois</span></div>
-          <div class="ht-tag">HT — Engagement 6 mois minimum</div>
-          <a href="#audit" class="btn btn-ghost plan-cta">Démarrer <span class="arrow">→</span></a>
-          <ul class="plan-features">
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Jusqu'à 5 campagnes + remarketing</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Call tracking + suivi leads complet</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Recommandations landing page incluses</li>
-            <li><span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Réunion mensuelle + rapport complet</li>
-          </ul>
-          <div class="plan-budget">
-            <strong>Budget pub recommandé</strong>
-            1 000 – 2 000€/mois, séparé des honoraires
-          </div>
-        </div>
-
-      </div>
-
-      <div class="always-included">
-        <div class="item">Compte Google Ads au nom du client</div>
-        <div class="item">Zéro frais cachés</div>
-        <div class="item">Conformité RIN garantie</div>
       </div>
     </div>
   </section>
@@ -1706,6 +1832,14 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
             <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
           </button>
           <div class="faq-a"><div class="faq-a-inner">Les premiers appels arrivent entre J+7 et J+21 selon la concurrence sur votre zone. Le mois 2 permet d'optimiser avec des données réelles. Le mois 3 est celui où les campagnes atteignent leur rythme de croisière.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Combien coûte votre accompagnement&nbsp;?</span>
+            <span class="chev"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Nos honoraires vont de 600€ à 1 600€/mois HT selon la taille de votre cabinet et le nombre de campagnes actives. Le budget publicitaire est séparé, minimum 500€/mois, versé directement à Google. La formule adaptée à votre situation est définie lors de l'audit gratuit de 30 minutes.</div></div>
         </div>
 
         <div class="faq-item">
@@ -1875,44 +2009,6 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
   const firstFaq = document.querySelector('.faq-item.open .faq-a');
   if (firstFaq) firstFaq.style.maxHeight = firstFaq.scrollHeight + 'px';
 
-  /* ---- Pricing toggle (avec mise à jour des prix) ---- */
-  const monthPrices = ['600€', '1 000€', '1 600€'];
-  const yearPrices  = ['540€', '900€',   '1 440€'];
-  const toggleEl = document.querySelector('.toggle');
-
-  function initToggle() {
-    const active = document.querySelector('.toggle button.active');
-    if (active) {
-      toggleEl.style.setProperty('--toggle-w', active.offsetWidth + 'px');
-      toggleEl.style.setProperty('--toggle-x', (active.offsetLeft - 4) + 'px');
-    }
-  }
-
-  document.querySelectorAll('.toggle button').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.toggle button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      toggleEl.style.setProperty('--toggle-w', btn.offsetWidth + 'px');
-      toggleEl.style.setProperty('--toggle-x', (btn.offsetLeft - 4) + 'px');
-
-      const prices = btn.dataset.toggle === 'year' ? yearPrices : monthPrices;
-      document.querySelectorAll('.price-card .amount').forEach((el, i) => {
-        el.style.transform = 'scale(0.9)';
-        el.style.opacity = '0';
-        setTimeout(() => {
-          el.textContent = prices[i];
-          el.style.transform = 'scale(1)';
-          el.style.opacity = '1';
-        }, 140);
-      });
-    });
-  });
-
-  document.querySelectorAll('.price-card .amount').forEach(el => {
-    el.style.transition = 'transform .2s ease, opacity .2s ease';
-  });
-
-  window.addEventListener('load', initToggle);
 
   /* ---- Scroll reveal (IntersectionObserver) ---- */
   const revealObserver = new IntersectionObserver((entries) => {
@@ -1926,8 +2022,8 @@ Chaque appel tracé. Chaque euro justifié. Chaque mois.</p>
 
   const autoRevealSelectors = [
     '.section-head', '.stat-card', '.feature-card',
-    '.ctx-row', '.price-card', '.method-row',
-    '.faq-item', '.hero-stats', '.always-included',
+    '.ctx-row', '.pg-item', '.pricing-range-block', '.method-row',
+    '.faq-item', '.hero-stats',
     '.roi-inner'
   ];
 
