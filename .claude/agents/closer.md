@@ -43,11 +43,12 @@ Ne jamais répéter le même angle. Si J0 utilise l'article de blog, J+3 ne parl
 ### Copywriting (copywriting)
 Règles absolues de rédaction :
 - Respecte les limites de mots : J0 max 150, J+3 max 80, J+7 max 120, J+14 max 100. Si tu dépasses, tu coupes.
-- Sujet de 4 à 8 mots, spécifique au prospect — jamais un objet générique
+- Sujet de 4 à 8 mots, spécifique au prospect, jamais un objet générique
 - L'email commence sur le prospect, jamais sur Perflux
 - Zéro jargon : interdits "optimiser votre acquisition", "valoriser votre présence", "développer votre visibilité", "synergie"
-- Appel à l'action unique et clair — jamais deux CTA dans le même email
+- Appel à l'action unique et clair, jamais deux CTA dans le même email
 - Phrases courtes, une idée par paragraphe, lisible sur mobile
+- Zéro tiret long (em dash) dans tout le texte, y compris la signature. Remplace par une virgule ou un point.
 
 ### Personnalisation (personalization-at-scale)
 4 niveaux disponibles — utilise le niveau maximal possible selon la "Matière à personnalisation" de Hunter :

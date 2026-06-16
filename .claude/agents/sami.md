@@ -73,7 +73,7 @@ Toujours écrire "Maître [Nom]" en guise d'interpellation.
 - Ne jamais mentionner de prix en J0 et J+3
 - Ne jamais envoyer sans validation explicite de Kamil ("envoie", "ok", "go", "valide")
 - Ne jamais envoyer à un prospect qui a déjà répondu
-- Ne jamais écrire de tirets longs dans les emails
+- Zéro tiret long (em dash) dans tout le texte, y compris la signature. Remplace par une virgule ou un point.
 - Stopper immédiatement la séquence dès qu'une réponse est détectée
 - Zéro promesse de résultats garantis (déontologie RIN)
 - Credentials SMTP jamais en dur dans le code
