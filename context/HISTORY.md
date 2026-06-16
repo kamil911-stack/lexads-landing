@@ -7,6 +7,25 @@
 
 ---
 
+## 2026-06-16
+
+### Migration CRM → Notion pure + règle "Maître [Nom]" obligatoire
+
+**CRM supprimé**
+- livrables/crm-site/, prospects.json et deploy-crm.yml supprimés
+- Notion "Prospects Perflux" = seule source de vérité (ID : 9f569df3...)
+
+**Infrastructure mise à jour**
+- send_j0.ps1 réécrit dans livrables/ : lit Notion (Validé J0=true + Envoyé J0=false), envoie via IONOS port 587 STARTTLS, met à jour Notion après chaque envoi
+- NOTION_TOKEN ajouté dans settings.json pour les scripts PowerShell locaux
+- Agents Hunter/Emma/Sami : toutes les écritures vont dans Notion via MCP
+
+**Règle "Maître [Nom]" non négociable**
+- closer.md et sami.md : règle absolue — tout email commence par "Maître [Nom]," sur la première ligne seule, suivi d'une ligne vide, sans exception
+- 19 brouillons existants corrigés dans Notion via fix_salutation.ps1 (19/19 OK)
+
+---
+
 ## 2026-06-15 (soir)
 
 ### Système brouillons + validation + envoi générique Perflux
