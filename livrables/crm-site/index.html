@@ -608,6 +608,7 @@ const SEED = [
         }
         persist();
         render();
+        refreshOpenModal();
       }
     }
   } catch(e) {}
@@ -635,7 +636,7 @@ const SEED = [
             if (upd) changed = true;
           }
         });
-        if (changed) { persist(); render(); }
+        if (changed) { persist(); render(); refreshOpenModal(); }
       }
     }
   } catch(e) {}
@@ -1065,6 +1066,14 @@ function openModal(id = null) {
   document.getElementById('overlay').classList.add('open');
 }
 
+function refreshOpenModal() {
+  if (!editId) return;
+  const p = data.find(x=>x.id===editId);
+  if (!p) return;
+  renderSeqTracker(p);
+  renderActivity(p);
+}
+
 function setPathStage(stage) {
   document.getElementById('f-stage').value = stage;
   onStageChange();
@@ -1203,7 +1212,7 @@ function delCurrent() {
 function switchMTab(tab, el) {
   document.querySelectorAll('.mtab-btn').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.mtab-p').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.mtab-btn').forEach(t=>{ if(t.textContent.toLowerCase().includes(tab)) t.classList.add('active'); });
+  if (el) el.classList.add('active');
   const panel = document.getElementById('mtab-'+tab);
   if (panel) panel.classList.add('active');
 }
