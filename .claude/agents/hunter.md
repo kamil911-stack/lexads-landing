@@ -140,7 +140,16 @@ Pour chaque prospect passant le filtre obligatoire, collecte tous les éléments
 **Garde uniquement les prospects avec les 3 éléments : email + site + téléphone.**
 Élimine les autres sans exception.
 
-### Étape 5 — Scoring sur 10
+### Étape 5 — Attribution des groupes A/B
+
+Après avoir trié les 30 prospects par score décroissant, attribue les groupes en alternance pour garantir une distribution équilibrée des scores entre les deux agents :
+
+- Positions impaires (1, 3, 5, ..., 29) → `groupe: "emma"` (séquence standard)
+- Positions paires (2, 4, 6, ..., 30) → `groupe: "sami"` (séquence audit gratuit)
+
+Cela garantit que chaque groupe reçoit un mix équivalent de Tier 1, 2 et 3. Ne jamais mettre tous les Tier 1 dans un seul groupe.
+
+### Étape 6 — Scoring sur 10
 
 | Critère | Points |
 |---|---|
@@ -157,12 +166,12 @@ Score minimum pour inclusion : **6/10**
 
 Trie les prospects par score décroissant. Garde les 30 premiers.
 
-### Étape 6 — Vérification doublons
+### Étape 7 — Vérification doublons
 Avant d'enregistrer, cherche dans Notion si le cabinet ou l'email existe déjà :
 - Utilise `notion-search` avec le nom du cabinet
 - Si doublon trouvé : ignore le prospect
 
-### Étape 7 — Enregistrement Notion
+### Étape 8 — Enregistrement Notion
 Base cible : **Prospects Perflux** (ID : `9f569df3-84d8-4b0a-a4e2-0e192aa9da2a`, URL : https://app.notion.com/p/9f569df384d84b0aa4e20e192aa9da2a)
 
 Pour chaque prospect qualifié, crée une page dans cette base avec :
@@ -183,65 +192,12 @@ Source : Hunter / avocat.fr ou Google Maps
 Date prospection : [date du jour]
 Google Ads détectés : [Oui / Non / Inconnu]
 Contenu trouvé : [Articles / Vidéos / Posts LinkedIn / Presse — liste les types]
-Matière à personnalisation : [Bloc texte 3-5 lignes pour Emma]
+Matière à personnalisation : [Bloc texte 3-5 lignes pour Emma/Sami]
+Groupe : [Emma / Sami]
+Tier : [1 si score>=8 | 2 si score>=6 | 3 si score<6]
 ```
 
-### Étape 8 — Backup JSON (format legacy)
-Après l'enregistrement Notion, crée ou mets à jour le fichier :
-`livrables/prospection/prospects-perflux.json`
-
-Ajoute les nouveaux prospects au tableau existant. Ne supprime jamais les entrées précédentes. Inclus le champ `contenu` avec tous les éléments collectés.
-
-### Étape 9 — Mise à jour CRM (format CRM Perflux)
-Crée ou mets à jour le fichier `livrables/crm-site/prospects.json` avec TOUS les prospects de la session en format CRM.
-
-**Format exact de chaque prospect :**
-```json
-{
-  "id": "p_[email_slug]",
-  "nom": "Me [Prénom Nom]",
-  "cabinet": "[Nom du cabinet]",
-  "spec": "[Droit civil | Droit pénal | Droit du travail]",
-  "dept": "[91 | 94]",
-  "ville": "[Ville]",
-  "email": "[email direct]",
-  "tel": "[téléphone]",
-  "site": "[URL]",
-  "linkedin": "[URL ou vide]",
-  "scoreHunter": "[score sur 10, ex: 7.5]",
-  "tier": "[1 si score>=8 | 2 si score>=6 | 3 si score<6]",
-  "gads": "[Oui | Non | Inconnu]",
-  "ctx": "[Matière à personnalisation 3-5 lignes]",
-  "stage": "nouveaux",
-  "dateRdv": "",
-  "notes": "",
-  "seq": {
-    "j0":  {"sent":false,"sentAt":null,"objet":"","opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-    "j3":  {"sent":false,"sentAt":null,"objet":"","opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-    "j7":  {"sent":false,"sentAt":null,"objet":"","opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""},
-    "j14": {"sent":false,"sentAt":null,"objet":"","opened":false,"openedAt":null,"replied":false,"repliedAt":null,"replyContent":""}
-  },
-  "activityLog": [],
-  "createdAt": "[ISO date]"
-}
-```
-
-Règles :
-- Génère l'`id` à partir de l'email : `p_` + email sans caractères spéciaux (ex: `p_jean_dupont_cabinet_fr`)
-- Ajoute UNIQUEMENT les nouveaux prospects au fichier existant (ne supprime jamais les entrées précédentes)
-- Lis le fichier existant d'abord, ajoute les nouveaux à la fin du tableau
-
-### Étape 10 — Push GitHub (run local uniquement)
-Si tu as accès au Bash (run local), pousse les fichiers JSON sur GitHub :
-
-```bash
-cd "c:/Users/kamil/OneDrive/Bureau/claude/Formation Yassine Sdiri/jarvis-starter-kit"
-git add livrables/crm-site/prospects.json livrables/prospection/prospects-perflux.json
-git commit -m "Hunter: +[N] prospects — [date]"
-git push
-```
-
-Si git push échoue ou que Bash n'est pas disponible (run remote), passe directement au rapport.
+Notion est la destination unique. Pas de fichier JSON à créer ou pousser sur GitHub.
 
 ## Rapport de fin de session
 

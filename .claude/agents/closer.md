@@ -196,27 +196,17 @@ Pour chaque prospect éligible, rédige l'email correspondant à son étape.
 Utilise la "Matière à personnalisation" de Hunter pour personnaliser chaque email.
 Pas de copier-coller entre prospects, chaque email doit être unique.
 
-### Étape 3 — Écrire les brouillons dans prospects.json + push GitHub
+### Étape 3 — Écrire les brouillons dans Notion
 
-Après avoir rédigé tous les emails, mets à jour `livrables/crm-site/prospects.json` pour chaque prospect.
+Après avoir rédigé tous les emails, mets à jour chaque fiche prospect directement dans Notion via le MCP Notion (outil `notion-update-page`).
 
-Pour chaque prospect :
-- Trouve l'entrée par son `id` ou son `email`
-- Écris `seq.j0.corps` = corps complet de l'email (texte brut)
-- Écris `seq.j0.objet` = objet de l'email
-- Laisse `seq.j0.validated = false` (Kamil validera dans le CRM)
+Pour chaque prospect, utilise le `notionPageId` de la fiche et mets à jour :
+- `Objet J0` = objet de l'email
+- `Corps J0` = corps complet de l'email (texte brut)
+- `Validé J0` = false (Kamil cochera lui-même dans Notion)
 
-Ensuite commit et push :
-
-```powershell
-$repo = "C:\Users\kamil\OneDrive\Bureau\claude\Formation Yassine Sdiri\jarvis-starter-kit"
-git -C $repo add livrables/crm-site/prospects.json
-git -C $repo commit -m "Emma: brouillons J0 rediges -- $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
-git -C $repo push
-```
-
-Après le push, annonce à Kamil :
-> "Brouillons écrits dans le CRM. Ouvre https://perflux-crm.netlify.app, clique sur chaque prospect → onglet **Séquence emails** → lis l'email → clique **Valider cet email**. L'envoi planifié (9h ou 15h) ne partira que pour les emails que tu as validés."
+Après les mises à jour, annonce à Kamil :
+> "Brouillons écrits dans Notion. Ouvre la base **Prospects Perflux**, filtre sur 'Validé J0 = non cochée' pour lire chaque email. Coche **Validé J0** sur les emails que tu valides, puis lance `livrables/send_j0.ps1` pour l'envoi."
 
 ### Étape 4 — Présenter à Kamil pour validation (facultatif)
 

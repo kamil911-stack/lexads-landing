@@ -7,6 +7,63 @@
 
 ---
 
+## 2026-06-15 (soir)
+
+### Système brouillons + validation + envoi générique Perflux
+
+**CRM — brouillons et validation**
+- 18 emails J0 rédigés et intégrés dans prospects.json (corps + objet personnalisés par prospect)
+- Onglet "Séquence emails" dans le CRM : affiche le brouillon en jaune, bouton "Valider / Annuler validation" par email
+- validate.js (Netlify Function) : écrit validated=true/false dans prospects.json via GitHub API
+- GITHUB_TOKEN injecté dans Netlify à chaque deploy via GitHub Actions
+- Merge Source 1 mis à jour : corps/objet/validated toujours synchronisés depuis prospects.json
+- Bouton "Vider cache" ajouté dans la toolbar pour forcer le rechargement depuis prospects.json
+
+**Script d'envoi générique**
+- send_j0.ps1 réécrit : git pull au démarrage, filtre validated=true + corps non vide + not sent, envoie via IONOS SMTP port 587 STARTTLS, push après envoi
+- Pixel de tracking open (track.js) intégré pour les 8 prospects avec notionPageId
+- Tâches Task Scheduler : Perflux-J0-Send (9h) et Perflux-J0-Send-15h (15h) créées mais désactivées — envoi sur go explicite de Kamil uniquement
+
+**Reprogrammation des agents**
+- Hunter : 2h03 lun-ven (était 8h)
+- Emma : 4h17 lun-ven — brouillons groupe emma dans prospects.json + push
+- Sami : 4h37 lun-ven — brouillons groupe sami dans prospects.json + push
+- closer.md et sami.md mis à jour : étape 3 = écrire dans prospects.json + push avant de notifier Kamil
+
+**État à la fin de la session**
+- 18 emails rédigés, 0 envoyé — Kamil doit valider dans le CRM puis donner son go
+- Bug d'affichage CRM en cours de résolution (cache localStorage / deploy Netlify)
+- Prochaine action : demain matin, vider cache CRM, lire et valider les 8 Tier 1 en premier, donner le go avant 9h
+
+---
+
+## 2026-06-15
+
+### Automatisation complète du pipeline prospection Perflux
+
+**CRM web app**
+- CRM kanban déployé sur Netlify (livrables/crm-site/) avec 5 colonnes : Nouveaux / Contactés / Intéressés / RDV / Lost
+- Netlify Function prospects.js : fetch temps réel depuis Notion sans rebuild
+- Auto-deploy via GitHub Actions (.github/workflows/deploy-crm.yml) déclenché sur push crm-site/
+
+**Agents schedulés**
+- Hunter (Alex) schedulé Lun-Ven 8h Paris — routine ID : trig_01CUt82bVWd8veP716A27FZy
+- Emma schedulée Lun-Ven 9h Paris en mode brouillon — routine ID : trig_01MVJ2FD3UEh4AE5gxjNmcRD
+- Les deux agents lisent leurs fichiers .md directement depuis le repo GitHub
+
+**Connexions établies**
+- GitHub App Claude installée sur le compte kamil911-stack / repo lexads-landing
+- Notion MCP connecté (ee241b5d) — les agents écrivent dans Notion sans clé API locale
+
+**Flow opérationnel**
+- 8h : Hunter scrape avocat.fr + Google Maps, qualifie et enregistre dans Notion
+- 9h : Emma lit les nouveaux prospects, rédige les brouillons, sauvegarde dans Notion et envoie un récap à kamilkhebbache911@gmail.com
+- Kamil valide et déclenche l'envoi manuellement depuis Claude Code
+
+**Premier run automatique** : 16/06/2026 à 8h02 Paris
+
+---
+
 ## 2026-06-14
 
 ### Configuration agents, skills, SMTP et n8n-as-code

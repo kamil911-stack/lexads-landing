@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "skills": {
+    "ab-message-testing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/ab-message-testing/SKILL.md",
+      "computedHash": "442c89dd4f7ca32eb8d4abb7ccb422fa5227be4e9e2e04939840f44bd156a5c8"
+    },
+    "ab-test-setup": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/ab-test-setup/SKILL.md",
+      "computedHash": "8660b07c6df5ca2f5289d0ab2e0ec032ff23cd86f2f2aed6892bf346a747c7ba"
+    },
+    "active-listening": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/active-listening/SKILL.md",
+      "computedHash": "6bcee82dbe6f4732eb36309a7b8a65a7d0eb6850a76f684f42f720f8f5f03bf0"
+    },
+    "adaptability": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/adaptability/SKILL.md",
+      "computedHash": "7de6b2c3c3d0992523dda2a37ce8ee994b88ffc865bbff48bc066afcbd6df71e"
+    },
+    "analytics-tracking": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/analytics-tracking/SKILL.md",
+      "computedHash": "36c3b1e9b45c826f6409ab2b79c0e181ff674b3223e3e87dc28e4cc62e59b2a0"
+    },
+    "appointment-booking": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/appointment-booking/SKILL.md",
+      "computedHash": "9cb7e3b897afefb3c1d45b66122d201e48da69b434f74e0da1bbd05471d984d0"
+    },
+    "asking-effective-questions": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/asking-effective-questions/SKILL.md",
+      "computedHash": "9502bba1242038fa101b0273002b7f50b3f3124191d5efa65f0501059fa91eef"
+    },
+    "attachment-media-handling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/attachment-media-handling/SKILL.md",
+      "computedHash": "ce7e4a38f1a1b24c820108aae18401866c056b23908e87350e49b754be611d9b"
+    },
+    "budget-extraction-qualification": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/budget-extraction-qualification/SKILL.md",
+      "computedHash": "fd720e8ae7488872cf0912f2a96e91ef6a550cdaed5887a74ce67041153905e2"
+    },
+    "building-rapport": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/building-rapport/SKILL.md",
+      "computedHash": "b6331b2020256934fdfecb3444861d4c75a37493a2ff7bf7218d078890f06844"
+    },
+    "buying-signal-amplification": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/buying-signal-amplification/SKILL.md",
+      "computedHash": "a4a4fe5b10bea008763f9d8c2dc5fed684902446401b9d1df58dc5bdb3921f74"
+    },
+    "callback-scheduling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/callback-scheduling/SKILL.md",
+      "computedHash": "809b5470137ce99f7093bf71e60678f560e498447f993f549a59cd228225b73d"
+    },
+    "channel-fallback-logic": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/channel-fallback-logic/SKILL.md",
+      "computedHash": "792bbe8e38aee1e99527583f2df313ee5c57b4c19b3350e1e41cc37a040d133a"
+    },
+    "channel-preference-detection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/channel-preference-detection/SKILL.md",
+      "computedHash": "0a4f2349cec4ffe4b3692496c200f28b7b3309c84e43975ba9d93c4ff4df7924"
+    },
+    "closing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/closing/SKILL.md",
+      "computedHash": "9cd14a9d26ce6ee77e82c8abf415e8550fa3937678c92d5d34ea23a55d342e58"
+    },
+    "competitive-intelligence-gathering": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/competitive-intelligence-gathering/SKILL.md",
+      "computedHash": "578ad31536feae695b93e34279ac56a56ddba917ddcecdd9db7413289bdb3a19"
+    },
+    "competitive-positioning": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/competitive-positioning/SKILL.md",
+      "computedHash": "232d95ee7b7eed6b2f539fafbbcfe6a0f5367bee1ec50df7439a79c809387504"
+    },
+    "competitor-alternatives": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/competitor-alternatives/SKILL.md",
+      "computedHash": "49b1a3956c8a418523e6730e11e82177406b91377dacfd4632b20a6e12f1e599"
+    },
+    "competitor-mention-handling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/competitor-mention-handling/SKILL.md",
+      "computedHash": "c22b43a90a346812056c918ce8e80ed500126539f0dff989b280ce4eeb22419b"
+    },
+    "compliance-handling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/compliance-handling/SKILL.md",
+      "computedHash": "b8835269f4df07104aaba2931144cfde71225959ab8be1122f8cc58cc3d62f1a"
+    },
+    "conversation-ab-testing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-ab-testing/SKILL.md",
+      "computedHash": "d4cf39eb2d7f0d3f47ab6d7ca04ba9e5d623d4836f7893c61440ad9a0daeac0e"
+    },
+    "conversation-branching": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-branching/SKILL.md",
+      "computedHash": "76c25aa0f9518829e2a9649b9becfef83ce336258f5d37ac73f9f423bf32d5d8"
+    },
+    "conversation-compliance-auditing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-compliance-auditing/SKILL.md",
+      "computedHash": "02370ce43b02ec909f990cf71291f7cc57fb4ea8581f8a3e5d3fe8677e657c5f"
+    },
+    "conversation-memory": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-memory/SKILL.md",
+      "computedHash": "518965f2c5b08fb5ea2b567c1b5e84830d44c8018219ce1c740e36ad8c7c2977"
+    },
+    "conversation-pause-intelligence": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-pause-intelligence/SKILL.md",
+      "computedHash": "58332f4452f8ca695f1b8958770614a7c8953abf80bd3cfe47f8352ea6bff791"
+    },
+    "conversation-quality-scoring": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-quality-scoring/SKILL.md",
+      "computedHash": "ae558cfe74d5ea8449446a6cab3800c21fe90c9171dced72b3472c9f4afee30c"
+    },
+    "conversation-resurrection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-resurrection/SKILL.md",
+      "computedHash": "a31586d6cfea3e9f30d6bbd21ac24e698f67d2df15e60591eb3fa49cae521058"
+    },
+    "conversation-summarization": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-summarization/SKILL.md",
+      "computedHash": "e5a845696241e69f354deb9ef96984e3f8add4ddef2be3d69b2dd57b5ecd6383"
+    },
+    "conversation-velocity-optimization": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversation-velocity-optimization/SKILL.md",
+      "computedHash": "400b21d0de6e320533d9650304c7777eff9d0ecb01d240cd11e825d171a59649"
+    },
+    "conversational-flow-management": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/conversational-flow-management/SKILL.md",
+      "computedHash": "9a1d91f8c8d4909d9798c8e5645bb72d7455fb568a23046f218a264ab252006f"
+    },
+    "copy-editing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/copy-editing/SKILL.md",
+      "computedHash": "a422bb594d76baf7f86b8d942e2f6388cd27985b5dcea574aa570f1f6d05f245"
+    },
+    "copywriting": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/copywriting/SKILL.md",
+      "computedHash": "ee49d0680e1fb5b1e83c1f1ee14bbb0b3c744b7244ca0a393a68389026a7df90"
+    },
+    "cross-sell-upsell-detection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/cross-sell-upsell-detection/SKILL.md",
+      "computedHash": "d0cb638265b048a5b2745c6514e55dca34675081c58a7fe2287e90b179aacc35"
+    },
+    "custom-field-population": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/custom-field-population/SKILL.md",
+      "computedHash": "cc4461e891083b37b763c08a076ba1dde4a9248b4f5e2becbf855a6a245de678"
+    },
+    "customer-onboarding": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/customer-onboarding/SKILL.md",
+      "computedHash": "33abea21e55ce0f1ae43593bb2b59bc8b87e20dd034a4ff1a495a105efef09be"
+    },
+    "customer-referrals": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/customer-referrals/SKILL.md",
+      "computedHash": "4abb91bc90900595c668864ffece69e4c105d80061d9be92490fd26e343080b9"
+    },
+    "data-enrichment-integration": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/data-enrichment-integration/SKILL.md",
+      "computedHash": "61db87238c50e373db88e24764b9ae759cabdea9376c1ef45ce02e0734ec12bc"
+    },
+    "deal-documentation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/deal-documentation/SKILL.md",
+      "computedHash": "5cdb57b19c137db27986287bdb1bbfcdbefcb4fe5bce80fd1e587d67d4145a38"
+    },
+    "deal-review-win-loss": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/deal-review-win-loss/SKILL.md",
+      "computedHash": "fc16ff3ef1aae36bf76aeed1222d2a08e99caf68543a673c9de9c13fc5126a7f"
+    },
+    "deal-upselling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/deal-upselling/SKILL.md",
+      "computedHash": "fde6d34453ecdd7588055cbbbe18b0428fc62bd0ad408f64dcf664273ba2faf4"
+    },
+    "decision-maker-identification": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/decision-maker-identification/SKILL.md",
+      "computedHash": "7e36add4b84921ae8ffe4687f0e9e0c2567e4952ad703494f123ffcb7001ce97"
+    },
+    "discovery": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/discovery/SKILL.md",
+      "computedHash": "04602aab38c54ece8c45824625bbcbdc024eef8019004e16ad676cebef36a234"
+    },
+    "disqualification-messaging": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/disqualification-messaging/SKILL.md",
+      "computedHash": "556173c1049c690b0d93574962ee2b6c018eb385bbf0f1165f2383bb196104d5"
+    },
+    "drip-pacing-intelligence": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/drip-pacing-intelligence/SKILL.md",
+      "computedHash": "8e6fcc39678ef552d272c232c7a41997a65c61cd5e097f261b1424a6d060fddd"
+    },
+    "duplicate-conversation-prevention": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/duplicate-conversation-prevention/SKILL.md",
+      "computedHash": "5c775fa62b459fdf0ede8553beb28f4adaea11f4e160fc9782a4c82977493d49"
+    },
+    "dynamic-script-generation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/dynamic-script-generation/SKILL.md",
+      "computedHash": "2f25546ddfc4d5cb46400d52737242a6726225f2f8c4d7fc97e373ac91ebe2cc"
+    },
+    "email-sequence": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/email-sequence/SKILL.md",
+      "computedHash": "2dfad109214b00177440d14793b18429e390907460453e17b65e59792d4a9d2f"
+    },
+    "emotional-arc-management": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/emotional-arc-management/SKILL.md",
+      "computedHash": "c72582872fe08fa9b44d71a37f859813f378e26db60ea9ac1bbaf291397044e4"
+    },
+    "empathy": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/empathy/SKILL.md",
+      "computedHash": "e56368f9e4ef5427b8a60dcf5c22c69125f887dbd3c7af3b6e6fa9c070b72786"
+    },
+    "entity-extraction": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/entity-extraction/SKILL.md",
+      "computedHash": "1f83eb543b3dd9290ff0b04614a5073135734a7530d6b68c995dc4e689063c68"
+    },
+    "fallback-gracefully": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/fallback-gracefully/SKILL.md",
+      "computedHash": "25a92111c7c6611757229ee2ad5976dba7d6ca1378b28dd1d97a4eded9de5362"
+    },
+    "feedback-loop-integration": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/feedback-loop-integration/SKILL.md",
+      "computedHash": "f853a21460514650330e0b8243d0054c8317ad14363924983c96cff9f73bdbdc"
+    },
+    "follow-up-discipline": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/follow-up-discipline/SKILL.md",
+      "computedHash": "b928a9c05edc8b088e88796e78b9e946e5e99cd9a302c615c8e118a5f04b74ef"
+    },
+    "ghost-recovery-sequences": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/ghost-recovery-sequences/SKILL.md",
+      "computedHash": "c4ed812b35c1080825257028bf90f33183f522c37b97f93e1dfd78f3b83017cc"
+    },
+    "handoff-detection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/handoff-detection/SKILL.md",
+      "computedHash": "f7ba86eaa014cd8592d4bffc4fea08e1a1ce32eb53ad54455c3afba617b30c4a"
+    },
+    "human-in-the-loop-training": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/human-in-the-loop-training/SKILL.md",
+      "computedHash": "c39b98b3d9c0129789836ed9ffc971afaa19048b299e649d4bad34294330d92e"
+    },
+    "ideal-customer-profile-matching": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/ideal-customer-profile-matching/SKILL.md",
+      "computedHash": "130722150cd26ef23f5668015ae6e73e35c195a97125e049decc0b3b4da73772"
+    },
+    "intent-detection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/intent-detection/SKILL.md",
+      "computedHash": "1bd861496ef0ecdac62b56732b0ccb0162bec0ac295183ed14c5edf1ea89d4d2"
+    },
+    "lead-qualification": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/lead-qualification/SKILL.md",
+      "computedHash": "26e1837c776fc2ad85585b110af3ec192fbd9071c68ff54c91ef36bfccf6d157"
+    },
+    "lead-qualification-logic": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/lead-qualification-logic/SKILL.md",
+      "computedHash": "cf0afc465f781639bc378463cb27541e049709093b44493d5d54bc9510e0f0c0"
+    },
+    "legal-compliance-phrase-avoidance": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/legal-compliance-phrase-avoidance/SKILL.md",
+      "computedHash": "7371b21697146b0fdf316f48270954ada3779bb86eedc5a3413ab874d56f5e54"
+    },
+    "meeting-confirmation-reminder-logic": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/meeting-confirmation-reminder-logic/SKILL.md",
+      "computedHash": "5a07867d30dbc466daeffc9711a536646a7150de016ecad1eb9b73eaeca815fb"
+    },
+    "meeting-conversion": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/meeting-conversion/SKILL.md",
+      "computedHash": "6126cbf4d702ae6e75329df77bc3d8c2f09d3cbe7cd7003870fe21b1825e088b"
+    },
+    "message-deliverability-optimization": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/message-deliverability-optimization/SKILL.md",
+      "computedHash": "48686f6530fe4ad2977a8a4346bb1eba69634ce0c18fc11e887973f962676db7"
+    },
+    "micro-commitment-stacking": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/micro-commitment-stacking/SKILL.md",
+      "computedHash": "935de2d775beed1d0f648cb213f1d4dc108af61050f1fbe62c0590bdf4462df5"
+    },
+    "multi-channel-coordination": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/multi-channel-coordination/SKILL.md",
+      "computedHash": "d83b6f1ae86c7546012fe5ff331413ad683b18042edc19a25f1db6eca95e5a78"
+    },
+    "multi-stakeholder-thread-management": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/multi-stakeholder-thread-management/SKILL.md",
+      "computedHash": "2366d8fd98a80e8072d2bab2f1affe1a6b9978150c1148bf741cd2dc47661014"
+    },
+    "multi-turn-context-retention": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/multi-turn-context-retention/SKILL.md",
+      "computedHash": "dc99907df96549a362de12e8fabaf2a1c8a9885c54c92ef53dd20e7623f936eb"
+    },
+    "multilingual-support": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/multilingual-support/SKILL.md",
+      "computedHash": "c0891ed83e66d21823511b521500c90248041f911960e63227d7a82fe4ce93c4"
+    },
+    "negative-sentiment-de-escalation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/negative-sentiment-de-escalation/SKILL.md",
+      "computedHash": "f1e60138a93f98ebfaa58bd4ee97140176145cf03c787b47fd888eb142b614d6"
+    },
+    "negotiation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/negotiation/SKILL.md",
+      "computedHash": "230cb089f4831cd3ae9a6ddfd68135a06d9f16332bd10b3a40a39bcd4c6cf9d8"
+    },
+    "objection-handling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/objection-handling/SKILL.md",
+      "computedHash": "18f9a152d43eb242cb4a7aa8bafa0942432fee50b87c3a413560c3f569468b46"
+    },
+    "objection-pattern-learning": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/objection-pattern-learning/SKILL.md",
+      "computedHash": "8c5db219a472df6e3ce9b3017996b44c697967917a2043a6365b43d14e982399"
+    },
+    "objection-recognition": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/objection-recognition/SKILL.md",
+      "computedHash": "1e3a1b90cced0ab41f3e5d0c60dd22fc34b34ebc614872bbbebb9b80376b69cb"
+    },
+    "out-of-scope-request-handling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/out-of-scope-request-handling/SKILL.md",
+      "computedHash": "286b1b34e14bbf59a6849f4ae414831d306454ad9d458a8541b61554d6b38de6"
+    },
+    "outbound-prospecting": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/outbound-prospecting/SKILL.md",
+      "computedHash": "cdf8b89eb1b656ad0c1018f67e6727b7f8e44e01218585829c10d025b829828d"
+    },
+    "performance-analytics": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/performance-analytics/SKILL.md",
+      "computedHash": "4294859090cc5de792479c25a382015505fc2e87cfced12c15050c04ab81e308"
+    },
+    "persona-classification": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/persona-classification/SKILL.md",
+      "computedHash": "419d778dd0f0d7593250e859e9089979534d3838e0d47e5c03c32053bef3bcc3"
+    },
+    "personalization-at-scale": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/personalization-at-scale/SKILL.md",
+      "computedHash": "3746c12e3efdee9c49ab3ea6fb2047fe014d0bd938a4472ce1d7923f029ec6c6"
+    },
+    "pipeline-management": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/pipeline-management/SKILL.md",
+      "computedHash": "f3820a925fe1df70df9dd77d8f35a965f480ce736769e567807abd1218ff92c4"
+    },
+    "post-meeting-follow-up-automation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/post-meeting-follow-up-automation/SKILL.md",
+      "computedHash": "7cffd637b94d3998a713f64e54c0d8dec0e662a4c9a65b0fccc47b51a23602e8"
+    },
+    "presentation-skills": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/presentation-skills/SKILL.md",
+      "computedHash": "5c115c8e29750f40eaa1e8738f87058da819b4a3fdbe2439b057a38a1c36dbe2"
+    },
+    "pricing-discussion-logic": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/pricing-discussion-logic/SKILL.md",
+      "computedHash": "b4cb49adaf313b52ae86872062c1a4ef9961c41f93b56ea1c651f5218c5099e3"
+    },
+    "pricing-negotiation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/pricing-negotiation/SKILL.md",
+      "computedHash": "98b90a3e795bf92cfc9e0a89a862f7ac533d96ec86fa7ba3de24a4786560521a"
+    },
+    "product-knowledge": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/product-knowledge/SKILL.md",
+      "computedHash": "f7aa9e3af5f1faaf9fea3e261f1d778f941d41743cbcd1a740e2f7a83bab21c5"
+    },
+    "propensity-scoring-realtime": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/propensity-scoring-realtime/SKILL.md",
+      "computedHash": "c2d6befd299898a0005310594c9a38e28b3ece8b2920f8830ab645f10f04a7b0"
+    },
+    "prospect-fatigue-detection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/prospect-fatigue-detection/SKILL.md",
+      "computedHash": "5d3f654856763194851b15763e585472dfc6b4565ab0677a07d47a4dbff64ad7"
+    },
+    "prospect-research-integration": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/prospect-research-integration/SKILL.md",
+      "computedHash": "0e0ff926d7efcaa1772141d54395e2c2fdb0f11c7f1afd5c3d9313e45e592e83"
+    },
+    "qualifying-leads": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/qualifying-leads/SKILL.md",
+      "computedHash": "0dce3d7ccf88e785b9811330a73dfbe981ad9b651bdd45882b5e966eb6bb086c"
+    },
+    "question-disambiguation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/question-disambiguation/SKILL.md",
+      "computedHash": "e55e5b049c9dd2bb6252186089239e70956d19ff02a19b300dcd350a96b3166b"
+    },
+    "re-engagement-sequencing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/re-engagement-sequencing/SKILL.md",
+      "computedHash": "ffda3aff82382ace46b8910865b9df1ea3dc550d6a7433a737148f10370e373f"
+    },
+    "referral-request-timing": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/referral-request-timing/SKILL.md",
+      "computedHash": "dac7e4c0e682a2ebca4babee4508ad8642bc0175937d6fe01bcbbd5384e210e0"
+    },
+    "reply-prediction": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/reply-prediction/SKILL.md",
+      "computedHash": "d48c0654ea7ccddb3185465538c671cc3d8c11236d9263f7e84946c929def1d2"
+    },
+    "resilience": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/resilience/SKILL.md",
+      "computedHash": "897ebf67fad6b2c84b262777b72d4386474fc74f25e80dfcf9e98475baac7bbf"
+    },
+    "response-confidence-scoring": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/response-confidence-scoring/SKILL.md",
+      "computedHash": "229429c6e7acf7783d974aee1489cc44428db505677cef5312812f0697527e42"
+    },
+    "response-latency-management": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/response-latency-management/SKILL.md",
+      "computedHash": "ee2017941e29b035e4996e1baec2d3047a9f69125fb7c80e14b821d7245d8ff3"
+    },
+    "response-length-calibration": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/response-length-calibration/SKILL.md",
+      "computedHash": "a223df667987394391af9be5281523ff589a2a451c4499ae347570e99c1dcac9"
+    },
+    "sales-enablement-tools": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-enablement-tools/SKILL.md",
+      "computedHash": "e7abb7913a0e4c1ff645888ef552ae46b44ec12133e89506b0f8d35858e7f343"
+    },
+    "sales-playbook-scaling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-playbook-scaling/SKILL.md",
+      "computedHash": "538fcdd8c18b2e878cc1756d2e0effa14f97a0e47ac0bd5ef097fb63c5f93e68"
+    },
+    "sales-presentations": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-presentations/SKILL.md",
+      "computedHash": "9de95b58929dd55366cc32b49f41fd4e4e64915e11267f6b1462e9dd0f52d0af"
+    },
+    "sales-process-optimization": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-process-optimization/SKILL.md",
+      "computedHash": "f5da17a308a6fc3aa34e8cfde9be86a374859025c61188e8359968a4377a31e6"
+    },
+    "sales-psychology": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-psychology/SKILL.md",
+      "computedHash": "2735e9f472c7e4b2d7decde79970faf3ea4e1c92ab646237b3397ca148540e4b"
+    },
+    "sales-tactics": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sales-tactics/SKILL.md",
+      "computedHash": "1aecf1b71efb07dad16efbc2c09cab85bc32c1876f1d54288519ab56b2fe806f"
+    },
+    "scarcity-urgency-calibration": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/scarcity-urgency-calibration/SKILL.md",
+      "computedHash": "a8fd495fc6992d07f2bd8cf6094d53cf32c47e344367b52bbcfc8b293c658920"
+    },
+    "sentiment-analysis": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sentiment-analysis/SKILL.md",
+      "computedHash": "06bf4f1c83148e1f669b74e0c44f0cbe1a0dba81f3cb1134184782196ebaaad2"
+    },
+    "sentiment-trend-tracking": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/sentiment-trend-tracking/SKILL.md",
+      "computedHash": "2b3d78568a7b3bf610dabf768d9d030e291c7be278daf91a929b4c479da0cb62"
+    },
+    "social-proof-injection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/social-proof-injection/SKILL.md",
+      "computedHash": "d13e2199b4d83e81ca86fb714d7cbf80fa514848eaf82db0b4631bf8d1658e4f"
+    },
+    "social-selling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/social-selling/SKILL.md",
+      "computedHash": "1f8c38dd7a58c8512e7a3343b7bac0b3ce9467a72e4208548111123b641de252"
+    },
+    "spam-bot-detection-avoidance": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/spam-bot-detection-avoidance/SKILL.md",
+      "computedHash": "bfd827e92db9bd13cdb43b6282e741830598882dda13c0511edbc3e455b68d31"
+    },
+    "storytelling": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/storytelling/SKILL.md",
+      "computedHash": "8dca05466aab30ec685d2e0726f890b088fc9e8ffdbf1023d8fc677c09846697"
+    },
+    "territory-account-launch": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/territory-account-launch/SKILL.md",
+      "computedHash": "623818879e00f95a30137724a8cc646542480011fce516260aa497df25c4a8ce"
+    },
+    "time-management": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/time-management/SKILL.md",
+      "computedHash": "06d78aa13f3af084a91d0f0c1050ce9e127d15c5b2edc57adbaa797031498bfb"
+    },
+    "time-to-close-prediction": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/time-to-close-prediction/SKILL.md",
+      "computedHash": "7f081a71e835b9d9b30d6e1d9d57a0499756a869e4b4ce33a9fd5d401728c00d"
+    },
+    "timezone-awareness": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/timezone-awareness/SKILL.md",
+      "computedHash": "3e2d9a9828596bc69c55d2a2659401f69220f5230249f9996f094db4e77e6dc1"
+    },
+    "timing-optimization": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/timing-optimization/SKILL.md",
+      "computedHash": "4d96ef630df854f41f4cbde1a65ad37eec96b47d9ed1d59fd9a02275b37dd31a"
+    },
+    "tone-matching": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/tone-matching/SKILL.md",
+      "computedHash": "04feafcda4428b4e251aaebf32c67afb98e339272515480d0435b3fe7c844712"
+    },
+    "trigger-event-detection": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/trigger-event-detection/SKILL.md",
+      "computedHash": "e28274a33273606bb5314efb7a3a79d3a0405f58013e25ddce4bf5cdd54f3a7c"
+    },
+    "urgency-creation": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/urgency-creation/SKILL.md",
+      "computedHash": "df86e54bd83629e50c81171e89c3e0d8e95423b6a171527875a71a71237bc95c"
+    },
+    "voicemail-drop-optimization": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/voicemail-drop-optimization/SKILL.md",
+      "computedHash": "3f7fca2a1eb1312c71b2a60ad9d9684bebb784e0eaf2c4aae946a0e22ae2e74f"
+    },
+    "warm-transfer-execution": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/warm-transfer-execution/SKILL.md",
+      "computedHash": "efd0d2b48053409d07dbd2ddf45ba706f9d06f5d7409c73fd1fcd4b57d8237fa"
+    },
+    "win-loss-reason-extraction": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/win-loss-reason-extraction/SKILL.md",
+      "computedHash": "492c10b8a135bbcf093740a1212847a3a0087a25aed086cd1dac43ba06b8fde1"
+    },
+    "written-communication": {
+      "source": "louisblythe/Sales-Skills",
+      "sourceType": "github",
+      "skillPath": "skills/written-communication/SKILL.md",
+      "computedHash": "ecfb24afd25aa0e33eef4f5669449e25beb7ff3d8350f3f5115ae761a2d22ff6"
+    }
+  }
+}
