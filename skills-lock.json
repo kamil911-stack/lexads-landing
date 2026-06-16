@@ -319,6 +319,12 @@
       "skillPath": "skills/follow-up-discipline/SKILL.md",
       "computedHash": "b928a9c05edc8b088e88796e78b9e946e5e99cd9a302c615c8e118a5f04b74ef"
     },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "93f53fd1c0352d3d7ec17b8f73d7351bf76f4821e55d123c9d2abc2c53ba48e4"
+    },
     "ghost-recovery-sequences": {
       "source": "louisblythe/Sales-Skills",
       "sourceType": "github",

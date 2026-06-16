@@ -7,6 +7,20 @@
 
 ---
 
+## 2026-06-16 (soir)
+
+### Migration Netlify vers Cloudflare Pages + pages légales
+
+- Crédits Netlify épuisés : migration complète vers Cloudflare Pages (lexads-landing.pages.dev)
+- DNS transféré d'IONOS vers Cloudflare (nameservers alina/fattouche.ns.cloudflare.com)
+- Custom domain perflux.fr ajouté dans Cloudflare Pages (vérification DNS en cours de résolution)
+- Création de mentions-legales.html et confidentialite.html (dark theme, RGPD conforme)
+- Footer index.html mis à jour : liens # remplacés par les vraies pages légales
+- Tout pushé sur GitHub, auto-deploy actif depuis master
+- DKIM kamil@perflux.fr toujours manquant : à configurer dans IONOS dashboard
+
+---
+
 ## 2026-06-16 (après-midi)
 
 ### 41 emails J0 envoyés + suppression CRM
