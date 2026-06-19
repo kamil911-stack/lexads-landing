@@ -1336,14 +1336,14 @@ button { font-family: inherit; }
   width: 42px;
   height: 42px;
   background: none;
-  border: 1.5px solid var(--border);
+  border: 1.5px solid rgba(17,17,17,0.3);
   border-radius: 8px;
   cursor: pointer;
   padding: 8px;
   flex-shrink: 0;
   transition: border-color 0.2s;
 }
-.nav-burger:hover { border-color: var(--ink-muted); }
+.nav-burger:hover { border-color: rgba(17,17,17,0.6); }
 .nav-burger span {
   display: block;
   width: 22px;
@@ -1431,6 +1431,12 @@ button { font-family: inherit; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 768px) {
+  .nav-burger { display: flex; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+}
+
 @media (max-width: 600px) {
   .hero { padding: 72px 0 60px; min-height: auto; }
   .hero-ctas { flex-direction: column; }
@@ -1442,9 +1448,6 @@ button { font-family: inherit; }
   .resultats-grid { flex-direction: column; gap: 44px; max-width: 100%; }
   .resultat-divider { width: 100%; height: 1px; margin: 0; }
   .audit { padding: 72px 0; }
-  .nav-burger { display: flex; }
-  .nav-links { display: none; }
-  .nav-cta { display: none; }
   .page-hero-ctas { flex-direction: column; }
   .container { padding-inline: 20px; }
 }
