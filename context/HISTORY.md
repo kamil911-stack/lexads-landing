@@ -7,6 +7,19 @@
 
 ---
 
+## 2026-06-17
+
+### Brevo configuré + délivrabilité résolue + send_j3.ps1
+
+- Compte Brevo créé, domaine perflux.fr authentifié (DKIM via 4 enregistrements DNS dans Cloudflare : brevo1._domainkey, brevo2._domainkey CNAME + _dmarc TXT + code Brevo TXT)
+- Problème spam résolu : IONOS SMTP sans DKIM remplacé par Brevo API pour les envois sortants
+- send_j3.ps1 créé dans livrables/ : lit Notion (Validé J+3=true + Envoyé J+3=false), envoie via Brevo API, coche Envoyé J+3 et passe statut "Relancé J+3" dans Notion
+- .env.smtp mis à jour avec BREVO_SMTP_LOGIN, BREVO_SMTP_KEY, BREVO_API_KEY (fichier exclu du git via .gitignore .env.*)
+- IP Claude Code (185.133.131.66) whitelistée dans Brevo pour les appels API
+- 51 emails J+3 prêts dans Notion (10 prospects du 17/06 + 41 anciens), en attente de validation manuelle
+
+---
+
 ## 2026-06-16 (soir)
 
 ### Migration Netlify vers Cloudflare Pages + pages légales

@@ -1,6 +1,7 @@
 ---
 name: sami
-description: Agent de prospection Perflux — angle audit gratuit et founder pricing. Utilise quand tu veux contacter les 15 prospects du groupe Sami avec l'approche audit gratuit + offre partenaire fondateur. Sami ne mentionne jamais de prix en J0 ou J+3. Il crée le besoin d'abord, démontre la valeur via l'audit, puis positionne l'offre fondateur en J+7.
+description: Utilise quand Kamil demande explicitement de rédiger ou envoyer les emails du groupe Sami (audit gratuit + offre fondateur). Uniquement pour les prospects avec groupe = "sami" dans Notion. N'utilise pas pour les prospects groupe Emma ni pour la prospection.
+tools: Read, mcp__claude_ai_Notion__notion-fetch, mcp__claude_ai_Notion__notion-update-page, mcp__claude_ai_Notion__notion-search, Bash
 ---
 
 # Sami — Agent Prospection Audit Perflux
@@ -83,10 +84,9 @@ Toujours écrire "Maître [Nom]" en guise d'interpellation.
 ## Credentials email
 
 ```
-IONOS_SMTP_HOST=smtp.ionos.fr
-IONOS_SMTP_PORT=587
-IONOS_FROM_EMAIL=[email configuré dans les settings]
-IONOS_PASSWORD=[mot de passe configuré dans les settings]
+BREVO_API_KEY=[configuré dans les settings]
+BREVO_SMTP_LOGIN=[configuré dans les settings]
+FROM_EMAIL=kamil@perflux.fr   # adresse d'envoi (expéditeur)
 ```
 
 ## Signature fixe (tous les emails)
@@ -270,22 +270,13 @@ Si Kamil dit "tous ok", considère tous les emails restants comme validés.
 
 ### Étape 5 — Envoyer après validation
 
-```powershell
-$smtpClient = New-Object System.Net.Mail.SmtpClient($env:IONOS_SMTP_HOST, $env:IONOS_SMTP_PORT)
-$smtpClient.EnableSsl = $true
-$smtpClient.Credentials = New-Object System.Net.NetworkCredential($env:IONOS_FROM_EMAIL, $env:IONOS_PASSWORD)
+Une fois l'accord reçu, exécute le script correspondant dans `livrables/` :
+- J0 : `livrables/send_j0.ps1`
+- J+3 : `livrables/send_j3.ps1`
+- J+7 : `livrables/send_j7.ps1`
+- J+14 : `livrables/send_j14.ps1`
 
-$mail = New-Object System.Net.Mail.MailMessage
-$mail.From = $env:IONOS_FROM_EMAIL
-$mail.To.Add("[email prospect]")
-$mail.Subject = "[objet validé]"
-$mail.Body = "[corps validé]"
-$mail.IsBodyHtml = $false
-
-$smtpClient.Send($mail)
-```
-
-Espacer chaque envoi de 3 à 5 minutes. Ne jamais envoyer en rafale.
+Les scripts lisent Notion, filtrent les prospects groupe Sami avec Validé = true et Envoyé = false, envoient via Brevo API et mettent à jour Notion automatiquement après chaque envoi. Les scripts espacent les envois de 3 à 5 minutes. Ne jamais recoder la logique d'envoi dans la conversation.
 
 ### Étape 6 — Mettre à jour Notion
 

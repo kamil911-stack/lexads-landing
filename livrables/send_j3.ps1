@@ -1,8 +1,8 @@
 #Requires -Version 7
 <#
 .SYNOPSIS
-  Envoie les emails J0 via Brevo API et met a jour Notion directement.
-  Filtre : "Valide J0" = true ET "Envoye J0" = false ET Corps J0 non vide.
+  Envoie les emails J+3 via Brevo API et met a jour Notion directement.
+  Filtre : "Valide J+3" = true ET "Envoye J+3" = false ET Corps J+3 non vide.
   Prerequis : NOTION_TOKEN, IONOS_FROM_EMAIL, BREVO_API_KEY definis en variables d'env utilisateur.
 #>
 
@@ -27,13 +27,13 @@ $notionHeaders = @{
 }
 
 # ── REQUETE NOTION : prospects a envoyer ─────────────────────────────────────
-Write-Host "Requete Notion — prospects Valide J0 = true + Envoye J0 = false..." -ForegroundColor Cyan
+Write-Host "Requete Notion — prospects Valide J+3 = true + Envoye J+3 = false..." -ForegroundColor Cyan
 
 $queryBody = @{
     filter = @{
         and = @(
-            @{ property = "Validé J0"; checkbox = @{ equals = $true } }
-            @{ property = "Envoyé J0"; checkbox = @{ equals = $false } }
+            @{ property = "Validé J+3"; checkbox = @{ equals = $true } }
+            @{ property = "Envoyé J+3"; checkbox = @{ equals = $false } }
         )
     }
     page_size = 100
@@ -43,7 +43,7 @@ $queryUrl = "https://api.notion.com/v1/databases/$DB_ID/query"
 $queryResp = Invoke-RestMethod -Uri $queryUrl -Method Post -Headers $notionHeaders -Body $queryBody
 
 $pages = @($queryResp.results | Where-Object {
-    $corps = $_.properties.'Corps J0'.rich_text
+    $corps = $_.properties.'Corps J+3'.rich_text
     $corps -and $corps.Count -gt 0 -and $corps[0].text.content.Trim() -ne ''
 })
 
@@ -81,8 +81,8 @@ foreach ($page in $pages) {
     $pageId = "$($pageId.Substring(0,8))-$($pageId.Substring(8,4))-$($pageId.Substring(12,4))-$($pageId.Substring(16,4))-$($pageId.Substring(20))"
 
     $email  = $page.properties.Email.email
-    $objet  = $page.properties.'Objet J0'.rich_text[0].text.content
-    $corps  = $page.properties.'Corps J0'.rich_text[0].text.content
+    $objet  = $page.properties.'Objet J+3'.rich_text[0].text.content
+    $corps  = $page.properties.'Corps J+3'.rich_text[0].text.content
     $nom    = $page.properties.Nom.title[0].text.content
 
     $htmlBody = ConvertTo-EmailHtml $corps
@@ -110,8 +110,8 @@ foreach ($page in $pages) {
     if ($sentOk) {
         $updateBody = @{
             properties = @{
-                "Envoyé J0" = @{ checkbox = $true }
-                "Statut"    = @{ select = @{ name = "Contacté" } }
+                "Envoyé J+3" = @{ checkbox = $true }
+                "Statut"     = @{ select = @{ name = "Relancé J+3" } }
             }
         } | ConvertTo-Json -Depth 5 -Compress
 
@@ -133,7 +133,7 @@ foreach ($page in $pages) {
 $okCount = ($sentLog | Where-Object { $_.Ok }).Count
 $ko      = @($sentLog | Where-Object { !$_.Ok }).Count
 Write-Host "`n========================================"
-Write-Host "RAPPORT J0 — $(Get-Date -Format 'dd/MM/yyyy HH:mm')"
+Write-Host "RAPPORT J+3 — $(Get-Date -Format 'dd/MM/yyyy HH:mm')"
 Write-Host "  OK     : $okCount / $total"
 if ($ko -gt 0) {
     Write-Host "  Echecs ($ko) :" -ForegroundColor Red

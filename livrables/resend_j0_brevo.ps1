@@ -1,8 +1,8 @@
 #Requires -Version 7
 <#
 .SYNOPSIS
-  Envoie les emails J0 via Brevo API et met a jour Notion directement.
-  Filtre : "Valide J0" = true ET "Envoye J0" = false ET Corps J0 non vide.
+  Renvoie les emails J0 via Brevo API pour tous les prospects Valide J0 = true.
+  IGNORE le flag "Envoye J0" — utilise pour corriger les emails arrives en spam via IONOS.
   Prerequis : NOTION_TOKEN, IONOS_FROM_EMAIL, BREVO_API_KEY definis en variables d'env utilisateur.
 #>
 
@@ -14,7 +14,7 @@ $FROM       = $env:IONOS_FROM_EMAIL       # kamil@perflux.fr — adresse d'envoi
 $API_KEY    = $env:BREVO_API_KEY          # cle API Brevo
 $TOKEN      = $env:NOTION_TOKEN
 $DB_ID      = '9f569df384d84b0aa4e20e192aa9da2a'
-$DELAY_SEC  = 180
+$DELAY_SEC  = 60
 
 if (-not $FROM)     { throw "IONOS_FROM_EMAIL non definie" }
 if (-not $API_KEY)  { throw "BREVO_API_KEY non definie" }
@@ -26,16 +26,12 @@ $notionHeaders = @{
     'Content-Type'   = 'application/json'
 }
 
-# ── REQUETE NOTION : prospects a envoyer ─────────────────────────────────────
-Write-Host "Requete Notion — prospects Valide J0 = true + Envoye J0 = false..." -ForegroundColor Cyan
+# ── REQUETE NOTION : tous les prospects Valide J0 = true (sans filtre Envoye J0) ──
+Write-Host "RESEND J0 via Brevo — prospects Valide J0 = true + Corps J0 non vide..." -ForegroundColor Yellow
+Write-Host "ATTENTION : ce script ignore le flag 'Envoye J0'. Il renvoie a tous les prospects valides." -ForegroundColor Yellow
 
 $queryBody = @{
-    filter = @{
-        and = @(
-            @{ property = "Validé J0"; checkbox = @{ equals = $true } }
-            @{ property = "Envoyé J0"; checkbox = @{ equals = $false } }
-        )
-    }
+    filter    = @{ property = "Validé J0"; checkbox = @{ equals = $true } }
     page_size = 100
 } | ConvertTo-Json -Depth 10 -Compress
 
@@ -47,10 +43,16 @@ $pages = @($queryResp.results | Where-Object {
     $corps -and $corps.Count -gt 0 -and $corps[0].text.content.Trim() -ne ''
 })
 
-Write-Host "$($pages.Count) prospect(s) a envoyer" -ForegroundColor Cyan
+Write-Host "$($pages.Count) prospect(s) a renvoyer" -ForegroundColor Cyan
 
 if ($pages.Count -eq 0) {
-    Write-Host "Aucun email a envoyer. Fin." -ForegroundColor Yellow
+    Write-Host "Aucun email a renvoyer. Fin." -ForegroundColor Yellow
+    exit 0
+}
+
+$confirm = Read-Host "`nConfirmer le renvoi a $($pages.Count) prospects ? (oui/non)"
+if ($confirm -ne 'oui') {
+    Write-Host "Annule." -ForegroundColor Red
     exit 0
 }
 
@@ -73,7 +75,7 @@ $sentLog = @()
 $total   = $pages.Count
 $index   = 0
 
-Write-Host "Debut : $(Get-Date -Format 'HH:mm:ss')  |  Fin estimee : $(([datetime]::Now).AddSeconds($DELAY_SEC * ($total - 1)).ToString('HH:mm:ss'))`n"
+Write-Host "`nDebut : $(Get-Date -Format 'HH:mm:ss')  |  Fin estimee : $(([datetime]::Now).AddSeconds($DELAY_SEC * ($total - 1)).ToString('HH:mm:ss'))`n"
 
 foreach ($page in $pages) {
     $index++
@@ -133,7 +135,7 @@ foreach ($page in $pages) {
 $okCount = ($sentLog | Where-Object { $_.Ok }).Count
 $ko      = @($sentLog | Where-Object { !$_.Ok }).Count
 Write-Host "`n========================================"
-Write-Host "RAPPORT J0 — $(Get-Date -Format 'dd/MM/yyyy HH:mm')"
+Write-Host "RAPPORT RESEND J0 BREVO — $(Get-Date -Format 'dd/MM/yyyy HH:mm')"
 Write-Host "  OK     : $okCount / $total"
 if ($ko -gt 0) {
     Write-Host "  Echecs ($ko) :" -ForegroundColor Red

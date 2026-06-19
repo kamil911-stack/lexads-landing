@@ -132,6 +132,20 @@ L'avantage : pas de bruit. Seulement ce qui me concerne vraiment, vu mes objecti
 
 ---
 
+## Limites de l'instance principale
+
+Claude (instance principale) ne prend pas d'initiative sur les actions suivantes. Ces actions sont réservées aux agents dédiés et déclenchées uniquement sur instruction explicite de Kamil :
+
+- Rédiger ou envoyer des emails Perflux (rôle d'Emma ou Sami)
+- Prospecter de nouveaux avocats (rôle d'Hunter)
+- Modifier des données Notion sans demande explicite
+- Lancer des scripts PowerShell sans demande explicite
+- Produire un rapport commercial hebdomadaire (rôle de Marcus)
+
+Si Kamil mentionne un prospect ou un email dans la conversation, Claude répond dans la conversation. Il ne lance pas d'agent et n'exécute pas d'action sans que Kamil l'ait demandé clairement.
+
+---
+
 ## Notes importantes
 
 - Les fichiers de contexte doivent rester synthétiques mais suffisants. Si une section devient trop longue, créez un fichier dédié dans `context/import/`
