@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Fond paper -->
+  <rect width="1200" height="630" fill="#F9F8F5"/>
+
+  <!-- Bande latérale gauche cramoisi -->
+  <rect x="0" y="0" width="8" height="630" fill="#B8272A"/>
+
+  <!-- Bande basse navy -->
+  <rect x="0" y="530" width="1200" height="100" fill="#1B2D4F"/>
+
+  <!-- Logo "P" stylisé -->
+  <rect x="72" y="72" width="56" height="56" rx="6" fill="#B8272A"/>
+  <text x="100" y="117" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#F9F8F5" text-anchor="middle">P</text>
+
+  <!-- Nom agence -->
+  <text x="144" y="112" font-family="Georgia, serif" font-size="28" font-weight="500" fill="#1B2D4F" letter-spacing="3">PERFLUX</text>
+
+  <!-- Accroche principale -->
+  <text x="72" y="250" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#111111" letter-spacing="-1">Vos dossiers</text>
+  <text x="72" y="336" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#111111" letter-spacing="-1">viennent de</text>
+  <text x="72" y="422" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#B8272A" letter-spacing="-1">Google Ads.</text>
+
+  <!-- Séparateur vertical -->
+  <rect x="900" y="180" width="1" height="300" fill="#DEDBD3"/>
+
+  <!-- Stats côté droit -->
+  <text x="960" y="240" font-family="Arial, sans-serif" font-size="15" fill="#888888" letter-spacing="2">RÉSULTATS MOYENS</text>
+  <rect x="960" y="254" width="40" height="2" fill="#B8272A"/>
+
+  <text x="960" y="310" font-family="Georgia, serif" font-size="52" font-weight="600" fill="#1B2D4F">4–8</text>
+  <text x="960" y="340" font-family="Arial, sans-serif" font-size="14" fill="#444444">dossiers / mois</text>
+
+  <text x="960" y="400" font-family="Georgia, serif" font-size="52" font-weight="600" fill="#1B2D4F">J+7</text>
+  <text x="960" y="430" font-family="Arial, sans-serif" font-size="14" fill="#444444">premiers appels</text>
+
+  <text x="960" y="490" font-family="Georgia, serif" font-size="52" font-weight="600" fill="#1B2D4F">0%</text>
+  <text x="960" y="520" font-family="Arial, sans-serif" font-size="14" fill="#444444">commission budget</text>
+
+  <!-- Bande basse : tagline + domaine -->
+  <text x="72" y="578" font-family="Arial, sans-serif" font-size="16" fill="#F9F8F5" letter-spacing="1">AGENCE GOOGLE ADS POUR AVOCATS — CONFORMITÉ RIN GARANTIE</text>
+  <text x="1128" y="578" font-family="Arial, sans-serif" font-size="16" fill="#B8272A" text-anchor="end" letter-spacing="1">perflux.fr</text>
+</svg>
