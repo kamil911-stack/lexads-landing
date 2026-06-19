@@ -37,7 +37,27 @@
         <li class="nav-item"><a href="qui-sommes-nous.html" class="nav-plain">L'agence</a></li>
       </ul>
       <a href="index.html#audit" class="btn btn-crimson nav-cta">Audit gratuit <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+    <div class="nav-mobile">
+      <div class="nav-mobile-group">
+        <div class="nav-mobile-label">Services</div>
+        <a href="google-ads-search.html" class="nav-mobile-link">Google Ads Search</a>
+        <a href="google-ads-performance-max.html" class="nav-mobile-link">Performance Max</a>
+      </div>
+      <div class="nav-mobile-group">
+        <div class="nav-mobile-label">Avocats</div>
+        <a href="avocats-droit-penal.html" class="nav-mobile-link">Droit pénal</a>
+        <a href="avocats-droit-civil.html" class="nav-mobile-link">Droit civil</a>
+        <a href="avocats-droit-du-travail.html" class="nav-mobile-link">Droit du travail</a>
+      </div>
+      <div class="nav-mobile-group">
+        <a href="qui-sommes-nous.html" class="nav-mobile-link">L'agence</a>
+        <a href="index.html#audit" class="btn btn-crimson" style="width:100%;justify-content:center;margin-top:12px;">Audit gratuit</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -200,6 +220,18 @@
 <script>
   const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const burger = document.getElementById('navBurger');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      const nav = document.querySelector('header.nav');
+      const isOpen = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', isOpen);
+    });
+    document.querySelectorAll('.nav-mobile-link, .nav-mobile .btn').forEach(l => {
+      l.addEventListener('click', () => { document.querySelector('header.nav').classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+    });
+  }
 </script>
 </body>
 </html>
