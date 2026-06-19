@@ -7,6 +7,18 @@
 
 ---
 
+## 2026-06-19
+
+### Renvoi J0 via Brevo + reset séquence
+
+- Les 41 emails J0 envoyés le 16/06 via IONOS étaient arrivés en spam (pas de DKIM à l'époque)
+- Tous les J0 ont été renvoyés aujourd'hui via Brevo (DKIM opérationnel, délivrabilité correcte)
+- Les 51 J+3 préparés dans Notion sont obsolètes : les prospects n'avaient pas reçu les J0 correspondants
+- Nouvelle date J+3 : 22/06/2026
+- Prochaine action : valider les emails J+3 dans Notion avant le 22/06
+
+---
+
 ## 2026-06-17
 
 ### Brevo configuré + délivrabilité résolue + send_j3.ps1
