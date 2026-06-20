@@ -1337,6 +1337,14 @@ button { font-family: inherit; }
 }
 .footer-legal a:hover { color: rgba(255,255,255,0.5); }
 
+.footer-linkedin {
+  display: flex;
+  align-items: center;
+  color: rgba(255,255,255,0.22);
+  transition: color 0.15s;
+}
+.footer-linkedin:hover { color: #0A66C2; }
+
 /* ==============================
    SCROLL REVEAL
 ============================== */
