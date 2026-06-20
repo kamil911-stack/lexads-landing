@@ -69,11 +69,16 @@
     .article-meta-sep { width: 3px; height: 3px; border-radius: 50%; background: var(--border); }
     .article-cover {
       width: 100%;
-      aspect-ratio: 16/9;
+      aspect-ratio: 3/2;
+      max-height: 420px;
       object-fit: cover;
+      object-position: center 20%;
       border-radius: 8px;
       margin-bottom: 56px;
       display: block;
+    }
+    @media (max-width: 640px) {
+      .article-cover { aspect-ratio: 4/3; max-height: none; border-radius: 6px; }
     }
     .article-lead {
       font-size: 18px;
