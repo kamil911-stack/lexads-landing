@@ -81,7 +81,7 @@
       .blog-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; display: flex; flex-direction: column; text-decoration: none; }
       .blog-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.08); transform: translateY(-4px); }
       .blog-card-img { width: 100%; aspect-ratio: 3/2; max-height: 220px; object-fit: cover; object-position: center 20%; display: block; background: var(--surface); }
-      @media (max-width: 480px) { .blog-card-img { aspect-ratio: 4/3; max-height: none; } }
+      @media (max-width: 480px) { .blog-card-img { aspect-ratio: unset; height: 180px; max-height: 180px; object-position: center 15%; } }
       .blog-card-body { padding: 28px 28px 32px; flex: 1; display: flex; flex-direction: column; }
       .blog-card-cat { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--crimson); margin-bottom: 12px; }
       .blog-card-title { font-family: var(--ff-display); font-size: clamp(20px, 2vw, 26px); font-weight: 500; color: var(--ink); line-height: 1.25; margin-bottom: 12px; }
